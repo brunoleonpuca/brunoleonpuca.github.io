@@ -17,9 +17,9 @@
 }
 
 body {
-    font-family: var(--ff-body);
-    color: var(--ff--color-primary);
+    background-color: var(--color-background);
     font-size: 0.4rem;
+    color: var(--ff--color-secondary);
 }
 
 h1 {
@@ -27,16 +27,22 @@ h1 {
     font-size: 0.75rem;
     text-align: center;
     text-decoration: underline;
+    color: var(--ff--color-secondary);
 }
 
 h2, h3, h4 {
+    font-family: var(--ff--title);
     text-align: center;
     text-decoration: underline;
     font-size: 0.6rem;
 }
 
+table {
+    font-family: var(--ff-body);
+    color: var(--ff--color-primary);
+}
+
 .container-fluid {
-    background-color: var(--color-background);
     border: 1px solid black;
 }
 

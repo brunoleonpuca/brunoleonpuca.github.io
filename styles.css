@@ -190,12 +190,20 @@ section.resume-section .subheading a {
     }
 
     section#experience h2{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     section#education h2{
-        font-size: 4rem;
+        font-size: 3rem;
     }
+}
+
+section#experience h2{
+    font-size: 4rem;
+}
+
+section#education h2{
+    font-size: 4rem;
 }
 
 section#experience h2,h3{
