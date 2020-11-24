@@ -31,6 +31,14 @@ h1 {
     white-space: normal;
 }
 
+button a{
+    color: var(--ff--color-secondary);
+}
+
+hr {
+    border-top: 2px solid var(--color-secondary);
+}
+
 #about span {
     color: var(--color-secondary)
 }
@@ -110,7 +118,7 @@ h1 {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         font-family: var(--ff--title);
         display: block;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -144,7 +152,7 @@ section.resume-section {
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 8rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
     max-width: 75rem;
 }
@@ -163,6 +171,7 @@ section.resume-section .subheading a {
     color: var(--color-secondary);
     text-decoration-color: initial;
     background-color: transparent;
+    text-transform: none;
 }
 
 @media (min-width: 768px) {
@@ -179,4 +188,13 @@ section.resume-section .subheading a {
         padding-bottom: 5rem;
         margin-left: 20rem;
     }
+
+    section#experience h2{
+        font-size: 4rem;
+    }
+
+}
+
+section#experience h2,h3{
+    font-family: var(--ff--title);
 }

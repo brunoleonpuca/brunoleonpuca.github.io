@@ -6,19 +6,19 @@
 
 :root {
     --ff--body: 'Noto Sans JP', sans-serif;
-    --ff--title: 'Roboto Condensed', sans-serif;
+    --ff--title: 'Oswald', sans-serif;
 
     --ff--color-primary: #1b1b1b;
     --ff--color-secondary: #CDD5D1;
 
-    --color-background: #1A1423;
-    --color-primary: #3D314A;
-    --color-secondary: #8D86C9;
+    --color-background: #2b3335;
+    --color-primary: #0f707a;
+    --color-secondary: #24acc4;
 }
 
 body {
     font-family: var(--ff-body);
-    color: var(--ff--color-secondary);
+    color: var(--ff--color-primary);
     font-size: 0.4rem;
 }
 
