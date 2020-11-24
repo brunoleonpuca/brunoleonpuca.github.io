@@ -6,14 +6,14 @@
 
 :root {
     --ff--body: 'Noto Sans JP', sans-serif;
-    --ff--title: 'Roboto Condensed', sans-serif;
+    --ff--title: 'Oswald', sans-serif;
 
     --ff--color-primary: #1b1b1b;
     --ff--color-secondary: #CDD5D1;
 
     --color-background: #2b3335;
-    --color-primary: #0c5b64;
-    --color-secondary: rgb(36, 172, 196);
+    --color-primary: #0f707a;
+    --color-secondary: #24acc4;
 }
 
 body {
@@ -26,6 +26,9 @@ h1 {
     font-family: var(--ff--title);
     font-weight: 700;
     font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    white-space: normal;
 }
 
 #about span {
@@ -51,17 +54,9 @@ h1 {
     background-color: var(--color-primary);
 }
 
-#sideNav #headerTitle {
-    font-family: var(--ff--title);
-    font-weight: 700;
-    letter-spacing: 0.3rem;
-    white-space: normal;
-}
-
 #sideNav .navbar-nav .nav-item .nav-link {
-    margin-top: 1rem;
-    font-weight: 800;
-    letter-spacing: 0.3rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
 
@@ -78,7 +73,7 @@ h1 {
         left: 0;
         display: flex;
         flex-direction: column;
-        width: 30rem;
+        width: 18rem;
         height: 100vh;
     }
 
@@ -89,9 +84,10 @@ h1 {
     }
 
     #sideNav .navbar-brand .img-profile {
-        max-width: 16rem;
-        max-height: 21rem;
+        max-width: 10rem;
+        max-height: 13rem;
         border: 0.7rem solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
     }
 
     #sideNav .navbar-collapse {
@@ -114,7 +110,7 @@ h1 {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         font-family: var(--ff--title);
         display: block;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -157,6 +153,18 @@ section.resume-section .resume-section-content {
     width: 100%;
 }
 
+section.resume-section .subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+section.resume-section .subheading a {
+    color: var(--color-secondary);
+    text-decoration-color: initial;
+    background-color: transparent;
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
@@ -169,6 +177,6 @@ section.resume-section .resume-section-content {
         padding-right: 3rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        margin-left: 30rem;
+        margin-left: 20rem;
     }
 }
