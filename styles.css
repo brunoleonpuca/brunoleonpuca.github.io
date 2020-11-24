@@ -152,7 +152,7 @@ section.resume-section {
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 10rem;
+    padding-top: 12rem;
     padding-bottom: 5rem;
     max-width: 75rem;
 }
@@ -193,8 +193,15 @@ section.resume-section .subheading a {
         font-size: 4rem;
     }
 
+    section#education h2{
+        font-size: 4rem;
+    }
 }
 
 section#experience h2,h3{
+    font-family: var(--ff--title);
+}
+
+section#education h2,h3{
     font-family: var(--ff--title);
 }
