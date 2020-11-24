@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --ff--body: 'Noto Sans JP', sans-serif;
+}
+
 body {
     background-color: #eee;
+    font-family: var(--ff-body);
     font-size: 0.4rem;
 }
 
-h1, h2, h3, h4 {
+h1 {
+    font-size: 0.75rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2, h3, h4 {
     text-align: center;
     text-decoration: underline;
     font-size: 0.6rem;
@@ -22,10 +33,14 @@ h1, h2, h3, h4 {
 
 @media(min-width:740px){
     body {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
-    h1, h2, h3, h4 {
-        font-size: 2rem;
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.3rem;
     }
 }
