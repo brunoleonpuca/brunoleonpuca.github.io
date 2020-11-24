@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff--body: 'Noto Sans JP', sans-serif;
+    --ff--title: 'Roboto Condensed', sans-serif;
+
+    --ff--color-primary: #1b1b1b;
+    --ff--color-secondary: #CDD5D1;
+
+    --color-background: #1A1423;
+    --color-primary: #3D314A;
+    --color-secondary: #8D86C9;
+}
+
+body {
+    font-family: var(--ff-body);
+    color: var(--ff--color-secondary);
+    font-size: 0.4rem;
+}
+
+h1 {
+    font-family: var(--ff--title);
+    font-size: 0.75rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 0.6rem;
+}
+
+.container-fluid {
+    background-color: var(--color-background);
+    border: 1px solid black;
+}
+
+@media(min-width:740px){
+    body {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.3rem;
+    }
+}

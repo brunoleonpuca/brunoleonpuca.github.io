@@ -8,51 +8,42 @@
     --ff--body: 'Noto Sans JP', sans-serif;
     --ff--title: 'Roboto Condensed', sans-serif;
 
-    --ff--color-primary: #F8F8F8;
+    --ff--color-primary: #1b1b1b;
     --ff--color-secondary: #CDD5D1;
 
-    --color-initial: #B4A6AB;
-    --color-primary: rgb(32, 18, 22);
-    --color-secondary: #576066;
-    --color-tertiary: #2C514C;
-    --color-quaternary: #;
+    --color-background: #2b3335;
+    --color-primary: #0c5b64;
+    --color-secondary: rgb(36, 172, 196);
 }
 
 body {
-    background-color: var(--color-initial);
     font-family: var(--ff-body);
-    color: var(--ff--color-primary);
-    font-size: 0.4rem;
+    color: var(--ff--color-secondary);
+    font-size: 1rem;
 }
 
 h1 {
-    font-size: 0.75rem;
-    text-align: center;
-    text-decoration: underline;
+    font-family: var(--ff--title);
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-h2, h3, h4 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 0.6rem;
+#about span {
+    color: var(--color-secondary)
 }
 
 .container-fluid {
-    background-color: var(--color-initial);
+    background-color: var(--color-background);
     border: 1px solid black;
 }
 
-@media(min-width:740px){
+@media(min-width:992px){
     body {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     h1 {
-        font-size: 1.5rem;
-    }
-
-    h2, h3, h4 {
-        font-size: 1.3rem;
+        font-size: 6rem;
     }
 }
 
@@ -68,8 +59,9 @@ h2, h3, h4 {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
+    margin-top: 1rem;
     font-weight: 800;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
 
@@ -86,7 +78,7 @@ h2, h3, h4 {
         left: 0;
         display: flex;
         flex-direction: column;
-        width: 17rem;
+        width: 30rem;
         height: 100vh;
     }
 
@@ -97,9 +89,9 @@ h2, h3, h4 {
     }
 
     #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+        max-width: 16rem;
+        max-height: 21rem;
+        border: 0.7rem solid rgba(255, 255, 255, 0.2);
     }
 
     #sideNav .navbar-collapse {
@@ -120,7 +112,9 @@ h2, h3, h4 {
     }
 
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-family: var(--ff--title);
         display: block;
+        font-size: 1.7rem;
     }
 }
 
@@ -154,7 +148,7 @@ section.resume-section {
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 5rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
     max-width: 75rem;
 }
@@ -175,6 +169,6 @@ section.resume-section .resume-section-content {
         padding-right: 3rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        margin-left: 20rem;
+        margin-left: 30rem;
     }
 }
