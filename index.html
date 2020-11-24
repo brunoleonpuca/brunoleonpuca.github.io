@@ -5,22 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="styles.css" type="text/css">
 
     <title>
         BLP - Home
     </title>
 </head>
-<body>
+<body class="page-top">
 
-    <button><a href="recursos.html">Recursos y fuentes</a></button>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
+        <a href="#page-top" class="navbar-brand js-scroll-trigger">
+            <span class="d-block d-lg-none" id="headerTitle">Bruno Leon Pucarelli</span>
+            <span class="d-none d-lg-block"><img src="img/profile.JPG" class="-fluid img-profile rounded-circle mx-auto mb-2" alt="profile-pic" width="150" height="150"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Pucarelli
+                    <span class="text-primary">Bruno Leon</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Argentina - Buenos Aires, Vicente Lopez (CP: 1602) - (+54)1157557822
+                    <a href="mailto:brunopuca1@gmail.com">brunopuca1@gmail.com</a> 
+                </div>
+                <p class="lead mb-5">I have experience in different backend and frontend programming languages, in addition to knowing how to automate test cases to provide a quality product. I understand agile development strategies to correctly coordinate my tasks and that of my colleagues and I believe I am very collaborative and capable</p>
+                <div class="social-icons">
+                    <a class="btn btn-dark btn-social mx-2" href="https://open.spotify.com/user/11141501240?si=vbsunsbSTRCJhXxtS2YKxg" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_leonpuca/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/brunoleonpuca/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/bruno-leon-pucarelli/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0">
+        <section class="resume-section" id="experience">
+            
+        </section>
+    </div>
+
+    <div class="page-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <button><a href="recursos.html">Recursos y fuentes</a></button>
     
-    <button><a href="">Notas Flask</a></button>
-    <button><a href="">Notas React</a></button>
-    <button><a href="">Notas CSS y HTML</a></button>
-    <button><a href="">Notas SQL</a></button>
+                    <button><a href="notas-flask.html">Notas Flask</a></button>
+                    <button><a href="">Notas React</a></button>
+                    <button><a href="">Notas CSS y HTML</a></button>
+                    <button><a href="">Notas SQL</a></button>
+                    
+                    <button><a href="">Descargar CV</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <button><a href="">Descargar CV</a></button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

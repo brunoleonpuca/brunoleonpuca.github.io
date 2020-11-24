@@ -6,11 +6,22 @@
 
 :root {
     --ff--body: 'Noto Sans JP', sans-serif;
+    --ff--title: 'Roboto Condensed', sans-serif;
+
+    --ff--color-primary: #F8F8F8;
+    --ff--color-secondary: #CDD5D1;
+
+    --color-initial: #B4A6AB;
+    --color-primary: rgb(32, 18, 22);
+    --color-secondary: #576066;
+    --color-tertiary: #2C514C;
+    --color-quaternary: #;
 }
 
 body {
-    background-color: #eee;
+    background-color: var(--color-initial);
     font-family: var(--ff-body);
+    color: var(--ff--color-primary);
     font-size: 0.4rem;
 }
 
@@ -27,7 +38,7 @@ h2, h3, h4 {
 }
 
 .container-fluid {
-    background-color: rgb(189, 189, 189);
+    background-color: var(--color-initial);
     border: 1px solid black;
 }
 
@@ -44,3 +55,73 @@ h2, h3, h4 {
         font-size: 1.3rem;
     }
 }
+
+#sideNav {
+    background-color: var(--color-primary);
+}
+
+#sideNav #headerTitle {
+    font-family: var(--ff--title);
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    white-space: normal;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        background-color: var(--color-primary);
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+
