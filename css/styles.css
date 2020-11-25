@@ -12,9 +12,9 @@
     --ff--color-secondary: #d5cecd;
 
     --color-background: #352f2b;
-    --color-background-gradient: linear-gradient(180deg, rgb(204, 134, 30) 20%, rgb(138, 56, 9) 80%);
+    --color-background-gradient: linear-gradient(180deg, rgb(148, 25, 21) 20%, rgb(172, 62, 18) 80%);
     --color-primary: #96400e;
-    --color-secondary: #e46918;
+    --color-secondary: #e43018;
 }
 
 body {
@@ -79,8 +79,8 @@ hr {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 500;
-    letter-spacing: 0.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
@@ -134,7 +134,7 @@ hr {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         font-family: var(--ff--title);
         display: block;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
