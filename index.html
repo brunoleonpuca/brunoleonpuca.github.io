@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
-    
+
+    <script src="https://kit.fontawesome.com/ea40a1a9cd.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/ea40a1a9cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 
     <title>
         BLP - Home
@@ -25,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
         <a href="#page-top" class="navbar-brand js-scroll-trigger">
             <span class="d-block d-lg-none mb-2" id="headerTitle">BLP</span>
-            <span class="d-none d-lg-block"><img src="img/profile.JPG" class="-fluid img-profile mx-auto my-3" alt="profile-pic"></span>
+            <span class="d-none d-lg-block"><img src="img/profile.JPG" class="fluid img-profile mx-auto my-3" alt="profile-pic"></span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,12 +39,16 @@
         </div>
 
         <div class="container-sm">
-            <button class="btn btn-outline-primary"><a href="recursos.html">My resources</a></button>
-            <button class="btn btn-outline-secondary"><a href="notas-flask.html">Flask Handbook</a></button>
-            <button class="btn btn-outline-success"><a href="">React Handbook</a></button>
-            <button class="btn btn-outline-danger"><a href="">HTML&CSS Handbook</a></button>
-            <button class="btn btn-outline-warning"><a href="">SQL Handbook</a></button>
-            <button class="btn btn-outline-info"><a href="assets/Bruno Leon Pucarelli - CV 2019.pdf" target="_blank" download>Download CV</a></button>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-outline-primary"><a href="recursos.html">My resources</a></button>
+                    <button class="btn btn-outline-secondary"><a href="notas-flask.html">Flask Handbook</a></button>
+                    <button class="btn btn-outline-success"><a href="">React Handbook</a></button>
+                    <button class="btn btn-outline-danger"><a href="">HTML&CSS Handbook</a></button>
+                    <button class="btn btn-outline-warning"><a href="">SQL Handbook</a></button>
+                    <button class="btn btn-outline-info"><a href="assets/Bruno Leon Pucarelli - CV 2019.pdf" target="_blank" download>Download CV</a></button>
+                </div>
+            </div>
         </div>
 
     </nav>
@@ -192,10 +195,11 @@
 
     </div> <!-- End of Page Content -->
     
-    
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
