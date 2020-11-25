@@ -14,7 +14,7 @@
     --color-background: #352f2b;
     --color-background-gradient: linear-gradient(180deg, rgb(204, 134, 30) 20%, rgb(138, 56, 9) 80%);
     --color-primary: #96400e;
-    --color-secondary: #d46a23;
+    --color-secondary: #e46918;
 }
 
 body {
@@ -170,8 +170,8 @@ hr {
     font-family: var(--ff--title);
     opacity: 0;
     color: white;
-    white-space: nowrap;
     overflow: hidden;
+    white-space: nowrap;
     max-width: 0;
     min-width: 0;
     text-decoration: none;
@@ -187,6 +187,20 @@ hr {
     margin: 10px;
     vertical-align: middle;
     transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
+}
+
+.png-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    vertical-align: text-top;
+}
+
+.hiptest-icon {
+    width: 40px;
+    height: 40px;
+    filter: grayscale();
+    vertical-align: text-top;
 }
 
 
@@ -243,6 +257,17 @@ section .section-title{
     .list-icons span {
         font-size: 2rem;
     }
+
+    .png-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hiptest-icon {
+        width: 60px;
+        height: 60px;
+    }
+
 }
 
 @media (min-width: 992px) {
