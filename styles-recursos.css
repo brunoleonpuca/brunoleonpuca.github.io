@@ -20,6 +20,7 @@ body {
     background-color: var(--color-background);
     font-size: 0.4rem;
     color: var(--ff--color-secondary);
+    font-weight: 500;
 }
 
 h1 {
@@ -48,7 +49,7 @@ table {
 
 @media(min-width:740px){
     body {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     h1 {
