@@ -155,40 +155,29 @@ hr {
 
 .list-icons span {
     font-size: 1.3rem;
-}
-
-.dev-icons i:hover span {
-    opacity: 1;
-    max-width: 300px;
-    margin: 10px;
-    transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, margin .1s ease-out .1s;
-}
-
-.dev-icons i {
-    margin: 0 0.8rem 0 0;
-    overflow: hidden;
-    transition: transform .1s;
-}
-
-.dev-icons i {
-    transform: scale(1.1);
-    transform-origin: left;
-    transition: transform .1s;
-}
-
-.list-icons span {
-    margin: 0px;
+    margin: 0 10px;
     display: inline-block;
     font-family: var(--ff--title);
     opacity: 0;
     color: white;
+    white-space: nowrap;
+    overflow: hidden;
     max-width: 0;
+    min-width: 0;
     text-decoration: none;
     vertical-align: middle;
-    transition: max-width .3s ease-out .1s, opacity 1s ease-out .1s, margin .1s ease-out .1s;
+    transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
+
 }
 
-
+.list-icons i:hover span {
+    opacity: 1;
+    min-width: 0;
+    max-width: 400px;
+    margin: 10px;
+    vertical-align: middle;
+    transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
+}
 
 /* -------------- */
 
