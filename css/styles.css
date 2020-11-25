@@ -10,6 +10,7 @@
 
     --ff--color-primary: #1b1b1b;
     --ff--color-secondary: #d5cecd;
+    --ff--color-tertiary: #b3acaa;
 
     --color-background: #352f2b;
     --color-background-gradient: linear-gradient(180deg, rgb(148, 25, 21) 20%, rgb(172, 62, 18) 80%);
@@ -40,15 +41,6 @@ hr {
     border-top: 2px solid var(--color-secondary);
 }
 
-#about span {
-    color: var(--color-secondary)
-}
-
-.container-fluid {
-    background-color: var(--color-background);
-    border: 1px solid black;
-}
-
 @media(min-width:992px){
     body {
         font-size: 1rem;
@@ -58,6 +50,17 @@ hr {
         font-size: 6rem;
     }
 }
+
+#about span {
+    color: var(--color-secondary)
+}
+
+.container-fluid {
+    background-color: var(--color-background);
+    border: 1px solid black;
+}
+
+/* ----------------------- SIDENAV ------------------------- */
 
 #sideNav #headerTitle {
     font-family: var(--ff--title);
@@ -72,6 +75,10 @@ hr {
 
 .subheading {
     font-family: var(--ff--body);
+}
+
+.resume-section-content span {
+    font-family: var(--ff--title);
 }
 
 #sideNav {
@@ -138,6 +145,8 @@ hr {
     }
 }
 
+/* ------------------SOCIAL ICONS ----------------------- */
+
 .social-icons .social-icon {
     display: inline-flex;
     align-items: center;
@@ -158,36 +167,6 @@ hr {
 .social-icons .social-icon:hover {
     background-color: #bd5d38;
 }
-
-.dev-icons {
-    font-size: 1.1rem;
-}
-
-.list-icons span {
-    font-family: var(--ff--title);
-    font-size: 0.8rem;
-    margin: 0 10px;
-}
-
-.list-icons i {
-    display: inline-block;
-}
-
-
-.png-icon {
-    width: 40px;
-    height: 40px;
-    filter: invert(1);
-    vertical-align: text-top;
-}
-
-.hiptest-icon {
-    width: 40px;
-    height: 40px;
-    filter: grayscale();
-    vertical-align: text-top;
-}
-
 
 section.resume-section {
     display: flex;
@@ -229,12 +208,67 @@ section .section-title{
     text-transform: uppercase;
 }
 
-
 @media (min-width: 768px) {
+    section.resume-section {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        max-width: 75rem;
+    }
+
     section.resume-section {
         min-height: 100vh;
     }
+}
 
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-left: 20rem;
+    }
+
+    section .section-title{
+        font-size: 3rem;
+    }
+}
+
+/* -------------- SKILLS ICONS ------------------- */
+
+.dev-icons {
+    font-size: 1.1rem;
+}
+
+.list-icons span {
+    font-family: var(--ff--title);
+    font-size: 0.8rem;
+    margin: 0 10px;
+}
+
+.list-icons i {
+    display: inline-block;
+}
+
+.png-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    /* vertical-align: text-top; */
+}
+
+.hiptest-icon {
+    width: 35px;
+    height: 35px;
+    filter: grayscale();
+    /* vertical-align: text-top; */
+}
+
+@media (min-width: 768px) {
     .dev-icons {
         font-size: 1.8rem;
     }
@@ -245,8 +279,8 @@ section .section-title{
     }
 
     .hiptest-icon {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
 
     .list-icons span {
@@ -263,7 +297,6 @@ section .section-title{
         text-decoration: none;
         vertical-align: middle;
         transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
-    
     }
     
     .list-icons i:hover span {
@@ -273,21 +306,6 @@ section .section-title{
         margin: 10px;
         vertical-align: middle;
         transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
-    }
-
-}
-
-@media (min-width: 992px) {
-    section.resume-section {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        margin-left: 20rem;
-    }
-
-    section .section-title{
-        font-size: 3rem;
     }
 }
 
