@@ -12,7 +12,8 @@
     --ff--color-secondary: #d5cecd;
 
     --color-background: #352f2b;
-    --color-primary: #924316;
+    --color-background-gradient: linear-gradient(180deg, rgb(204, 134, 30) 20%, rgb(138, 56, 9) 80%);
+    --color-primary: #96400e;
     --color-secondary: #d46a23;
 }
 
@@ -58,12 +59,23 @@ hr {
     }
 }
 
+#sideNav #headerTitle {
+    font-family: var(--ff--title);
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+#sideNav figcaption {
+    font-family: var(--ff--title);
+    color: var(--ff--color-secondary);
+}
+
 .subheading {
     font-family: var(--ff--body);
 }
 
 #sideNav {
-    background-color: var(--color-primary);
+    background: var(--color-background-gradient);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -78,7 +90,7 @@ hr {
 
 @media (min-width: 992px) {
     #sideNav {
-        background-color: var(--color-primary);
+        background: var(--color-background-gradient);
         text-align: center;
         position: fixed;
         top: 0;
