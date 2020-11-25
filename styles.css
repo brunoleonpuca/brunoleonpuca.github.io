@@ -9,11 +9,11 @@
     --ff--title: 'Oswald', sans-serif;
 
     --ff--color-primary: #1b1b1b;
-    --ff--color-secondary: #CDD5D1;
+    --ff--color-secondary: #d5cecd;
 
-    --color-background: #2b3335;
-    --color-primary: #0f707a;
-    --color-secondary: #24acc4;
+    --color-background: #352f2b;
+    --color-primary: #924316;
+    --color-secondary: #d46a23;
 }
 
 body {
@@ -148,13 +148,11 @@ hr {
 }
 
 .dev-icons {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
-/* -------------- */
-
 .list-icons span {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     margin: 0 10px;
     display: inline-block;
     font-family: var(--ff--title);
@@ -173,14 +171,11 @@ hr {
 .list-icons i:hover span {
     opacity: 1;
     min-width: 0;
-    max-width: 400px;
+    max-width: 600px;
     margin: 10px;
     vertical-align: middle;
     transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
 }
-
-/* -------------- */
-
 
 
 section.resume-section {
@@ -210,9 +205,31 @@ section.resume-section .subheading a {
     text-transform: none;
 }
 
+
+section .section-title, 
+.resume-section-content h3, 
+.resume-section-content h4{
+    font-family: var(--ff--title);
+    text-transform: uppercase;
+}
+
+section .section-title{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+}
+
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
+    }
+
+    .dev-icons {
+        font-size: 1.8rem;
+    }
+    
+    .list-icons span {
+        font-size: 2rem;
     }
 }
 
@@ -228,23 +245,5 @@ section.resume-section .subheading a {
     section .section-title{
         font-size: 3rem;
     }
-
-    .dev-icons {
-        font-size: 2rem;
-    }
-
-    .dev-icons i {
-        margin: 0 1.5rem 0 0;
-    }
-}
-
-section .section-title, 
-.resume-section-content h3, 
-.resume-section-content h4{
-    font-family: var(--ff--title);
-}
-
-section .section-title{
-    font-size: 3.4rem;
 }
 
