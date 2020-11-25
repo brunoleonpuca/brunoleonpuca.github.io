@@ -164,30 +164,15 @@ hr {
 }
 
 .list-icons span {
-    font-size: 0.9rem;
-    margin: 0 10px;
-    display: inline-block;
     font-family: var(--ff--title);
-    opacity: 0;
-    color: white;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 0;
-    min-width: 0;
-    text-decoration: none;
-    vertical-align: middle;
-    transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
-
+    font-size: 0.8rem;
+    margin: 0 10px;
 }
 
-.list-icons i:hover span {
-    opacity: 1;
-    min-width: 0;
-    max-width: 600px;
-    margin: 10px;
-    vertical-align: middle;
-    transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
+.list-icons i {
+    display: inline-block;
 }
+
 
 .png-icon {
     width: 40px;
@@ -253,10 +238,6 @@ section .section-title{
     .dev-icons {
         font-size: 1.8rem;
     }
-    
-    .list-icons span {
-        font-size: 2rem;
-    }
 
     .png-icon {
         width: 60px;
@@ -266,6 +247,32 @@ section .section-title{
     .hiptest-icon {
         width: 60px;
         height: 60px;
+    }
+
+    .list-icons span {
+        font-size: 1.3rem;
+        margin: 0 10px;
+        display: inline-block;
+        font-family: var(--ff--title);
+        opacity: 0;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 0;
+        min-width: 0;
+        text-decoration: none;
+        vertical-align: middle;
+        transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
+    
+    }
+    
+    .list-icons i:hover span {
+        opacity: 1;
+        min-width: 0;
+        max-width: 600px;
+        margin: 10px;
+        vertical-align: middle;
+        transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
     }
 
 }
