@@ -151,12 +151,12 @@ hr {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: #495057;
     color: #fff;
     border-radius: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-right: 1.5rem;
 }
 
@@ -167,6 +167,21 @@ hr {
 .social-icons .social-icon:hover {
     background-color: #bd5d38;
 }
+
+.social-icons-wrapper {
+    position: fixed;
+    top: 90%;
+    right: 3%;
+    width: 150px;
+    height: 40px;
+}
+
+/* .social-icons-wrapper {
+    
+    line-height: 45px;
+    text-align: center;
+    border-radius: 3px;
+} */
 
 section.resume-section {
     display: flex;
@@ -235,6 +250,27 @@ section .section-title{
 
     section .section-title{
         font-size: 3rem;
+    }
+
+    .social-icons .social-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: #495057;
+        color: #fff;
+        border-radius: 100%;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .social-icons-wrapper {
+        position: fixed;
+        top: 90%;
+        right: 3%;
+        width: 150px;
+        height: 40px;
     }
 }
 
