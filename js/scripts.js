@@ -41,21 +41,13 @@
         target: "#sideNav",
     });
 
-
     $(document).ready(function(){
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 800) {
-                $('.social-icons').addClass('social-icons-wrapper');
-            
-                $('.social-icons').animate({
-                    bottom:'0px'}, 800
-                    );
-            } 
-            else  {
-                $('.social-icons').removeClass('social-icons-wrapper');
-            }
+
         });
     });
 
-
 })(jQuery); // End of use strict
+
+
+
