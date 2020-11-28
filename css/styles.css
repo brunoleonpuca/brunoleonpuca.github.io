@@ -12,6 +12,8 @@
     --ff--color-secondary: #d5cecd;
     --ff--color-tertiary: #b3acaa;
 
+    --ts--black: 3px 2px 4px black;
+
     --color-background: #352f2b;
     --color-background-gradient: linear-gradient(180deg, rgb(148, 25, 21) 20%, rgb(172, 62, 18) 80%);
     --color-primary: #96400e;
@@ -174,14 +176,13 @@ hr {
     position: relative;
 }
 
-/* .social-icons-wrapper {
+.social-icons-wrapper {
     position: fixed;
-    top: 89.5%;
-    bottom: 90vh;
-    right: -10%;
+    top: 85%;
+    right: 0%;
     width: 150px;
     height: 40px;
-} */
+}
 
 /* ---------------------------------------------- */
 
@@ -337,3 +338,51 @@ section .section-title{
     }
 }
 
+/* -------------- PORTFOLIO ITEMS ------------------- */
+
+.portfolio-caption-heading,
+.portfolio-caption-subheading,
+.portfolio-link-external {
+    font-family: var(--ff--title);
+    color: var(--ff--color-secondary);
+    font-size: 2rem;
+    text-shadow: var(--ts--black);
+}
+
+.portfolio-link-external:after {
+    content: "  \2197";
+    font-size: 1rem;
+}
+
+.portfolio-item {
+    margin: 0 auto 30px auto;
+    text-align: left;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.portfolio-item .portfolio-hover {
+    display: grid;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    background: rgba(83, 83, 83, 0.6);
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+.portfolio-item:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-item .img-fluid {
+    width: 40rem;
+    height: 20rem;
+    object-fit: cover;
+}

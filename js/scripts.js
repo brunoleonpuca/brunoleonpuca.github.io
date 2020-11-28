@@ -41,11 +41,19 @@
         target: "#sideNav",
     });
 
-    $(document).ready(function(){
-        $(window).scroll(function() {
-
-        });
+    $('div[class="portfolio-hover"]').click(function(e){ // <--- don't miss this e
+    if ($(this).css('opacity')==0) e.preventDefault();
     });
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            $('.social-icons').addClass('social-icons-wrapper');
+            
+        } else {
+            $('.social-icons').removeClass('social-icons-wrapper');
+        }
+    })
 
 })(jQuery); // End of use strict
 
