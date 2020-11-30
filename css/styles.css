@@ -24,6 +24,7 @@ body {
     font-family: var(--ff-body);
     color: var(--ff--color-secondary);
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -97,6 +98,10 @@ hr {
     outline-color: #d48a6e;
 }
 
+#dropdown-name {
+    font-family: var(--ff--title);
+}
+
 .dropright .dropdown-menu {
     background-color: var(--color-background);
     border: 2px solid var(--ff--color-secondary);
@@ -160,13 +165,13 @@ hr {
     }
 
     .dropright .dropdown-menu {
-        left: 185px;
+        left: 176px;
         margin-top: 0px;
-
+        top: -149px;
     }
 
     .dropright .dropdown-item {
-
+        
     }
 
 }
