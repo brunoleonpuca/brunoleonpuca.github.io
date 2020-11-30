@@ -97,6 +97,19 @@ hr {
     outline-color: #d48a6e;
 }
 
+.dropright .dropdown-menu {
+    background-color: var(--color-background);
+    border: 2px solid var(--ff--color-secondary);
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.dropright .dropdown-item {
+    font-family: var(--ff--title);
+    background-color: var(--color-background);
+    color: var(--ff--color-secondary);
+}
+
 @media (min-width: 992px) {
     #sideNav {
         background: var(--color-background-gradient);
@@ -145,6 +158,17 @@ hr {
         display: block;
         font-size: 1.2rem;
     }
+
+    .dropright .dropdown-menu {
+        left: 185px;
+        margin-top: 0px;
+
+    }
+
+    .dropright .dropdown-item {
+
+    }
+
 }
 
 /* ------------------SOCIAL AND GENERAL ICONS ----------------------- */
