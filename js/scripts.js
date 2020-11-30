@@ -50,13 +50,13 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > scrollAmount) {
         
-            $('.social-icons').stop().animate({opacity: '0'}, 150);
-            $('.social-icons-floating').stop().animate({opacity: '1'}, 150);
+            $('.social-icons').stop().animate({opacity: '0'}, 50);
+            $('.social-icons-floating').stop().animate({opacity: '1'}, 50);
         
 
         } else {
-            $('.social-icons-floating').stop().animate({opacity: '0'}, 150);
-            $('.social-icons').stop().animate({opacity: '1'}, 150);
+            $('.social-icons-floating').stop().animate({opacity: '0'}, 50);
+            $('.social-icons').stop().animate({opacity: '1'}, 50);
         }
     })
 
