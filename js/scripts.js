@@ -45,15 +45,21 @@
     if ($(this).css('opacity')==0) e.preventDefault();
     });
 
-
+    
+    var scrollAmount = 600;
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 800) {
-            $('.social-icons').addClass('social-icons-wrapper');
-            
+        if ($(this).scrollTop() > scrollAmount) {
+        
+            $('.social-icons').stop().animate({opacity: '0'}, 150);
+            $('.social-icons-floating').stop().animate({opacity: '1'}, 150);
+        
+
         } else {
-            $('.social-icons').removeClass('social-icons-wrapper');
+            $('.social-icons-floating').stop().animate({opacity: '0'}, 150);
+            $('.social-icons').stop().animate({opacity: '1'}, 150);
         }
     })
+
 
 })(jQuery); // End of use strict
 
