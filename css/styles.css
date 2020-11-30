@@ -18,6 +18,7 @@
     --color-background-gradient: linear-gradient(180deg, rgb(148, 25, 21) 20%, rgb(172, 62, 18) 80%);
     --color-primary: #96400e;
     --color-secondary: #e43018;
+    --color-background-form: #504741;
 }
 
 body {
@@ -218,6 +219,10 @@ hr {
     height: 50px;;
     z-index: 99;
     transition: 0.2s;
+}
+
+.social-icons-floating .social-icon:hover {
+    background-color: #bd5d38;
 }
 
 /* --------------- END SOCIAL AND GENERAL ICONS ------------------------------- */
@@ -445,6 +450,9 @@ section .section-title{
 #contact form input,
 #contact form textarea {
     font-size: 1rem;
+    border: 1px solid var(--color-primary);
+    color: var(--ff--color-secondary);
+    background-color: var(--color-background-form);
 }
 
 #contact form textarea {
