@@ -44,23 +44,18 @@
     $('div[class="portfolio-hover"]').click(function(e){ // <--- don't miss this e
     if ($(this).css('opacity')==0) e.preventDefault();
     });
-
     
     var scrollAmount = 600;
     $(window).scroll(function () {
         if ($(this).scrollTop() > scrollAmount) {
-        
             $('.social-icons').stop().animate({opacity: '0'}, 50);
             $('.social-icons-floating').stop().animate({opacity: '1'}, 50);
-        
-
         } else {
             $('.social-icons-floating').stop().animate({opacity: '0'}, 50);
             $('.social-icons').stop().animate({opacity: '1'}, 50);
         }
     })
-
-
+    
 })(jQuery); // End of use strict
 
 

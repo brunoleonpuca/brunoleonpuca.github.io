@@ -41,7 +41,7 @@ button a{
 }
 
 hr {
-    border-top: 2px solid var(--color-secondary);
+    border-top: 3px solid var(--color-secondary);
 }
 
 @media(min-width:992px){
@@ -115,6 +115,10 @@ hr {
     color: var(--ff--color-secondary);
 }
 
+.dropright .dropdown-item:hover {
+    background-color: #1f1b19;
+}
+
 @media (min-width: 992px) {
     #sideNav {
         background: var(--color-background-gradient);
@@ -171,7 +175,7 @@ hr {
     }
 
     .dropright .dropdown-item {
-        
+
     }
 
 }
@@ -429,4 +433,31 @@ section .section-title{
     width: 40rem;
     height: 20rem;
     object-fit: cover;
+}
+
+/* ---------- CONTACT SECTION ---------------- */
+
+#contact form {
+    margin: auto 0px auto 0px;
+    font-family: var(--ff--title);
+}
+
+#contact form input,
+#contact form textarea {
+    font-size: 1rem;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+@media (min-width:992px) {
+    #contact form {
+        margin: auto 0px auto 0px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 1.4rem;
+    }
 }
