@@ -7,6 +7,7 @@
 :root {
     --ff--body: 'Noto Sans JP', sans-serif;
     --ff--title: 'Oswald', sans-serif;
+    --ff--nav: 'Alfa Slab One', cursive;
 
     --ff--color-primary: #1b1b1b;
     --ff--color-secondary: #d5cecd;
@@ -67,8 +68,8 @@ hr {
 /* ----------------------- SIDENAV ------------------------- */
 
 #sideNav #headerTitle {
-    font-family: var(--ff--title);
-    font-size: 2rem;
+    font-family: var(--ff--nav);
+    font-size: 2.3rem;
     letter-spacing: 0.5rem;
 }
 
@@ -97,6 +98,10 @@ hr {
 
 #sideNav .navbar-toggler:focus {
     outline-color: #d48a6e;
+}
+
+.navbar-toggler {
+    margin-top: -20px;
 }
 
 #dropdown-name {
@@ -174,11 +179,6 @@ hr {
         margin-top: 0px;
         top: -149px;
     }
-
-    .dropright .dropdown-item {
-
-    }
-
 }
 
 /* ------------------SOCIAL AND GENERAL ICONS ----------------------- */
@@ -213,7 +213,7 @@ hr {
 .social-icons-floating {
     opacity: 0;
     position: fixed;
-    bottom: 125px;
+    bottom: 150px;
     right: 15px;
     width: 15px;
     height: 50px;;
@@ -350,6 +350,10 @@ section .section-title{
     filter: grayscale();
 }
 
+#skills .hover-text {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .dev-icons {
         font-size: 1.8rem;
@@ -389,6 +393,10 @@ section .section-title{
         vertical-align: middle;
         transition: max-width 1s ease-out .1s, opacity 1.5s ease-out .1s, margin .1s ease-out .1s;
     }
+
+    #skills .hover-text {
+        display: initial;
+    }
 }
 
 /* -------------- PORTFOLIO ITEMS ------------------- */
@@ -408,6 +416,7 @@ section .section-title{
 }
 
 .portfolio-item {
+    width: 87.5%;
     margin: 0 auto 30px auto;
     text-align: left;
     filter: drop-shadow(2px 4px 6px black);
@@ -464,6 +473,10 @@ section .section-title{
     width: 110px;
     height: 35px;
     box-shadow: 4px 4px 7px 1px #000000;
+}
+
+#contact form button:hover {
+    background-color: #36302c;
 }
 
 #contact form button:active {
