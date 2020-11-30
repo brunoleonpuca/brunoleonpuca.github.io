@@ -448,7 +448,8 @@ section .section-title{
 }
 
 #contact form input,
-#contact form textarea {
+#contact form textarea,
+#contact form button {
     font-size: 0.8rem;
     border: 1px solid var(--color-primary);
     color: var(--ff--color-secondary);
@@ -460,8 +461,8 @@ section .section-title{
 }
 
 #contact form button {
-    width: 150px;
-    height: 50px;
+    width: 110px;
+    height: 35px;
     box-shadow: 4px 4px 7px 1px #000000;
 }
 
@@ -478,7 +479,14 @@ section .section-title{
     }
 
     #contact form input,
-    #contact form textarea {
+    #contact form textarea,
+    #contact form button {
         font-size: 1.2rem;
+    }
+
+    #contact form button {
+        width: 150px;
+        height: 50px;
+        box-shadow: 4px 4px 7px 1px #000000;
     }
 }
