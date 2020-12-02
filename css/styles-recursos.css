@@ -47,6 +47,32 @@ table {
     border: 1px solid black;
 }
 
+#goto-section {
+    background-color: rgba(141, 141, 141, 0.24);
+    z-index: 999;
+    border: none;
+    text-align: center;
+}
+
+#goto-section a {
+    background-color: #2b3335;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.4rem;
+    color: white;
+    transition: 0.3s;
+
+}#goto-section a:hover{
+    background-color: #1b2122;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+}
+
 @media(min-width:740px){
     body {
         font-size: 1rem;
@@ -58,5 +84,9 @@ table {
 
     h2, h3, h4 {
         font-size: 1.3rem;
+    }
+
+    #goto-section a {
+        font-size: 1rem;
     }
 }
