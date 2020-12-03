@@ -1,9 +1,4 @@
 
-/*!
-    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-    */
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -59,6 +54,35 @@
             $('.social-icons').stop().animate({opacity: '1'}, 50);
         }
     })
+
+    const text = document.querySelector('.about-header');
+    const strText = text.textContent;
+    const splitText = strText.split("");
+    text.textContent = "";
+
+    for (let i = 0; i < splitText.length; i++)
+    {
+        let char = (splitText[i] === " ") ? "&nbsp;" : splitText[i];
+        text.innerHTML += "<span>" + char + "</span>";
+    }
+
+    let char = 0;
+    let timer = setInterval(onTick, 80);
+
+    function onTick() {
+        const span = text.querySelectorAll("span")[char];
+        span.classList.add("fade");
+        char++;
+        if (char === splitText.length) {
+            complete();
+            return;
+        }
+    }
+
+    function complete() {
+        clearInterval(timer);
+        timer = null;
+    }
     
 })(jQuery); // End of use strict
 
