@@ -57,11 +57,12 @@ hr {
     }
 }
 
-.about-header {
-    word-break: break-all;
-
-    /* animation: yourAnimation 1s infinite 0s ease-in-out; */
+.container-fluid {
+    background-color: var(--color-background);
+    border: 1px solid black;
 }
+
+/* ----------------------- SIDENAV ------------------------- */
 
 .about-header span {
     display: inline-block;
@@ -90,13 +91,6 @@ hr {
         color: var(--ff--color-secondary);
     }
 }
-
-.container-fluid {
-    background-color: var(--color-background);
-    border: 1px solid black;
-}
-
-/* ----------------------- SIDENAV ------------------------- */
 
 #sideNav #headerTitle {
     font-family: var(--ff--nav);
@@ -136,25 +130,28 @@ hr {
     margin-top: -20px;
 }
 
-#dropdown-name {
-    font-family: var(--ff--title);
+.other-nav-item-wrapper {
+    margin-bottom: 10px;
 }
 
-.dropright .dropdown-menu {
-    background-color: var(--color-background);
-    border: 2px solid var(--ff--color-secondary);
-    margin-top: 5px;
-    font-size: 0.8rem;
-}
-
-.dropright .dropdown-item {
+.other-nav-item {
     font-family: var(--ff--title);
     background-color: var(--color-background);
     color: var(--ff--color-secondary);
+    padding: 6px;
+    margin-right: 15px;
+    box-shadow: 4px 4px 7px 1px #000000;
 }
 
-.dropright .dropdown-item:hover {
+.other-nav-item:hover {
     background-color: #1f1b19;
+    color: var(--ff--color-secondary);
+    text-decoration: none;
+}
+
+.other-nav-item:active {
+    box-shadow: 4px 4px 7px 1px rgba(0,0,0,0);
+    transform: scale(0.95,0.95);
 }
 
 @media (min-width: 992px) {
@@ -168,7 +165,8 @@ hr {
         flex-direction: column;
         width: 18rem;
         height: 100vh;
-        padding-bottom: 75px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     #sideNav .navbar-brand {
@@ -212,14 +210,15 @@ hr {
         font-size: 1.2rem;
     }
 
-    .dropright {
-        margin-top: 40px;
+    .other-nav-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 15px;
     }
 
-    .dropright .dropdown-menu {
-        left: 176px;
-        margin-top: 0px;
-        top: -149px;
+    .other-nav-item {
+        margin: 0 10px;
     }
 }
 
