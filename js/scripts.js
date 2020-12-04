@@ -83,6 +83,13 @@
         clearInterval(timer);
         timer = null;
     }
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+            $('.tooltip').addClass('animated swing');
+        })
+    })
     
 })(jQuery); // End of use strict
 

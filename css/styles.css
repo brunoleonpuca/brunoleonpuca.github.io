@@ -69,6 +69,12 @@ hr {
 }
 
 /* ----------------------- SIDENAV ------------------------- */
+.fade {
+    opacity:0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
 
 .about-header span {
     display: inline-block;
@@ -103,6 +109,11 @@ hr {
     color: var(--ff--color-secondary);
     font-size: 2.3rem;
     letter-spacing: 0.5rem;
+}
+
+.back-top {
+    position: absolute;
+    display: none;
 }
 
 #sideNav figcaption {
@@ -200,10 +211,6 @@ hr {
         border: 0.7rem solid rgba(255, 255, 255, 0.2);
         border-radius: 50%;
         transition: 0.3s;
-    }
-
-    #sideNav .navbar-brand .back-top {
-        display: none;
     }
 
     #sideNav .navbar-brand .img-profile:hover {
