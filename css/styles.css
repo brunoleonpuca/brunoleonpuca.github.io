@@ -16,7 +16,13 @@
     --ts--black: 3px 2px 4px black;
 
     --color-background: #352f2b;
-    --color-background-gradient: linear-gradient(180deg, rgb(148, 25, 21) 20%, rgb(172, 62, 18) 80%);
+
+    --color-background-gradient: linear-gradient(
+        45deg,
+        rgb(131, 20, 16) 20%, 
+        rgb(170, 31, 26) 60%,
+        rgb(194, 71, 22) 80%);
+
     --color-primary: #96400e;
     --color-secondary: #e43018;
     --color-background-form: #504741;
@@ -113,8 +119,21 @@ hr {
 }
 
 #sideNav {
-    background: var(--color-background-gradient);
+    background-image: var(--color-background-gradient);
+    background-size: 400%;
+    animation: bg-animation 15s infinite alternate;
 }
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
 
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 700;
@@ -156,7 +175,7 @@ hr {
 
 @media (min-width: 992px) {
     #sideNav {
-        background: var(--color-background-gradient);
+        background-image: var(--color-background-gradient);
         text-align: center;
         position: fixed;
         top: 0;
@@ -181,6 +200,10 @@ hr {
         border: 0.7rem solid rgba(255, 255, 255, 0.2);
         border-radius: 50%;
         transition: 0.3s;
+    }
+
+    #sideNav .navbar-brand .back-top {
+        display: none;
     }
 
     #sideNav .navbar-brand .img-profile:hover {
