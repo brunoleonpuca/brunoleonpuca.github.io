@@ -64,7 +64,6 @@
     var style_end = "</div>";
     var content = "";
     let flag = null;
-    
 
     for (let i = 0; i < splitText.length; i++)
     {
