@@ -439,6 +439,11 @@ section .section-title{
         height: 55px;
     }
 
+    .azure-icon{
+        width: 68px;
+        height: 78px;
+    }
+
     .list-icons span {
         font-size: 1.3rem;
         margin: 0 10px;
