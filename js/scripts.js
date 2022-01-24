@@ -70,7 +70,7 @@
         let char = 0;
         
         if (splitText[i] === " ") {
-            char = "&nbsp;"
+            char = "&nbsp;"sfekuoyesa9d8fi6saetdr46
         } else {
             char = splitText[i];
         }
