@@ -1,4 +1,3 @@
-
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -70,7 +69,7 @@
         let char = 0;
         
         if (splitText[i] === " ") {
-            char = "&nbsp;"sfekuoyesa9d8fi6saetdr46
+            char = "&nbsp;"
         } else {
             char = splitText[i];
         }
@@ -114,6 +113,3 @@
     })
     
 })(jQuery); // End of use strict
-
-
-
