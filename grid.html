@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/6405a22b9c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="grid.css" type="text/css" />
+  <link rel="stylesheet" href="blue-theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <title>Portfolio beta</title>
+</head>
+
+<body>
+  <!-- ****************** NAV SECTION **************************** -->
+  <nav class="navbar navbar-expand-md fixed-top transparent bg-color" id="sideNav">
+    <a class="navbar-caption text-black logo-collapsed nav-link" href="#about" id="logo">
+      BLP
+    </a>
+    <a class="navbar-toggler collapsed navbar-toggler-icon" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span> </span>
+      <span> </span>
+      <span> </span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav" id="nav-buttons" data-app-modern-menu="true">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <div class="navbar-logo">
+          <div class="navbar-brand">
+            <span class="navbar-caption-wrap">
+              <a class="navbar-caption logo-list nav-link" href="#about" id="logo">
+                BLP
+              </a>
+            </span>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-buttons" id="download-cv"><a href="cv">CV</a></div>
+  </nav>
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div float-right>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="float-left">
+            <img src="img/profile.JPG" alt="profile-pic">
+            <!-- <figcaption id="subheaderTitle">Welcome to my portoflio</figcaption> -->
+          </div>
+          <span>
+            <p>Hola! If you've made it this far, maybe it means that you're interested in my path in becoming a
+              developer. I've made this portfolio to show you my experience, knowledge, skills and resources that helped
+              me become one (Or perharps try to become one). If you have any commentary or wish to talk to me please
+              contact me by e-mail or send me an automatic message at the last slide. Hope you like my journey, ci
+              vediamo!
+            </p>
+          </span>
+        </div>
+        <div class="modal-body">
+          <button><a href="assets/Bruno Leon Pucarelli - CV 2022.pdf" target="_blank">See my CV</a></button>
+          <button><a class="nav-link js-scroll-trigger" href="#contact" class="close" data-dismiss="modal">Contact
+              Me</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ****************** MAIN SECTION **************************** -->
+  <div class="main-content" id="panels-container">
+    <div class="social-icons-floating ">
+      <div class="btn-group dropdown dropleft">
+        <button id="floating-button" type="button" class="btn row row-cols-1 dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+            href="https://www.instagram.com/_brunoleonpuca/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+            href="https://open.spotify.com/user/11141501240?si=vbsunsbSTRCJhXxtS2YKxg" target="_blank"><i
+              class="fab fa-spotify"></i></a>
+          <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+            href="https://www.facebook.com/brunoleonpuca/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+            href="https://www.linkedin.com/in/bruno-leon-pucarelli/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+            href="https://www.github.com/brunoleonpuca/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-main panel" id="about">
+      <div class="section-main-content" id="about-container">
+        <div id="about-inner-top">
+          <div class="about-title-container">
+            <hr class="title-separator" />
+            <div class="about-header">
+              <h1 id="name">[Bruno Leon] Pucarelli</h1>
+            </div>
+            <p class="subheading mb-1 about-subheader">
+              QA AUTOMATION - WEB DEVELOPER
+            </p>
+            <hr class="title-separator" />
+          </div>
+          <a href="mailto:brunopuca1@gmail.com">brunopuca1@gmail.com</a>
+          <p class="lead mb-1">Sicily - Italia</p>
+        </div>
+        <div id="about-inner-bottom">
+          <div class="about-inner-bottom-wrapper">
+            <div class="about-cards">
+              <div class="icon d-flex mt-4">
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-solid fa-earth-europe"></i>
+              </div>
+              <div class="icon-title">Double citizenship</div>
+              <div class="icon-description">
+                Argentina and Italy citizen. Native Spanish speaker,
+                advanced English level and Italian basic speaker.
+              </div>
+            </div>
+            <div class="about-cards">
+              <div class="icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="icon-title">Energetic and Autonomous</div>
+              <div class="icon-description">
+                Always trying to acquire experience and new knowledges as well
+                as to contribute and be useful to my team and colleagues.
+              </div>
+            </div>
+            <div class="about-cards">
+              <div class="icon">
+                <i class="fa fa-bug-slash"></i>
+              </div>
+              <div class="icon-title">Bugless Implementations</div>
+              <div class="icon-description">
+                Coding and implementations the best way possible. Improving my
+                code to write it without bugs and better optimized is a must
+                in my mindset.
+              </div>
+            </div>
+            <div class="about-cards">
+              <div class="icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <div class="icon-title">Collaborative Programming</div>
+              <div class="icon-description">
+                Collaboration and team communication as well as branch control
+                in a develop environment to always be a teamplayer.
+              </div>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a class="social-icon btn btn-dark btn-social"
+              href="https://open.spotify.com/user/11141501240?si=vbsunsbSTRCJhXxtS2YKxg" target="_blank"><i
+                class="fab fa-spotify"></i></a>
+            <a class="social-icon btn btn-dark btn-social" href="https://www.instagram.com/_leonpuca/"
+              target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon btn btn-dark btn-social" href="https://www.facebook.com/brunoleonpuca/"
+              target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon btn btn-dark btn-social" href="https://www.linkedin.com/in/bruno-leon-pucarelli/"
+              target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon btn btn-dark btn-social" href="https://github.com/brunoleonpuca/" target="_blank"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE AND EDUCATION SECTION -->
+    <section class="section-main panel" id="experience">
+      <div class="section-main-content" id="experience-container">
+        <div id="accordion">
+          <h3 class="section-title-experience mb-0">Experience</h3>
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                QA Manual Ssr
+              </button>
+              <span class="experience-place">Momentous Tech. Corp. / Intive</span>
+              <span class="experience-date">Jan 2016 - Feb 2019</span>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                My first job was at Momentous Technologies Corp. as a
+                Trainee/Jr and continued at Intive as a Ssr. I've created
+                daily-smoke, exploratory and functionalities suites of test
+                cases for mobile and web applications and reported bugs in
+                Jira and Azure platforms.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                QA Automation Jr
+              </button>
+              <span class="experience-place">Intive</span>
+              <span class="experience-date">Mar 2019 - Aug 2019</span>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                After 2 years in Intive, I was promoted as an automation
+                engineer. The labor as QA Manual, pre-automation, helped me a
+                lot to comprehend the test-in-depth mindset that must be done
+                while coding, so I applied all these knowledge now using C#
+                and Selenium.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="true" aria-controls="collapseThree">
+                .NET Developer Jr
+              </button>
+              <span class="experience-place">Intive</span>
+              <span class="experience-date">Sep 2019 - Mar 2020</span>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                After 6 months as QA Automation, Intive offered me a .NET
+                position, I took it knowing it was going to be very hard to
+                addapt my knowledges once again. As a .NET Jr. I've worked as
+                a bug fixer and I used it to analyze and comprehend the syntax
+                and frameworks used in a large scale proyect.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
+                Frontend Developer Trainee
+              </button>
+              <span class="experience-place">Freelance / Self-taught</span>
+              <span class="experience-date">Apr 2020 - Currently...</span>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                I started to learn Frontend and UI design as an autodidact to
+                learn all I can about web development to improve my QA
+                Automation seniority. That took me to discover and get used to
+                the programming environment and community, and gave me a much
+                better view of where I was and where I would like to be.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="true" aria-controls="collapseFive">
+                QA Automation Mid-Level
+              </button>
+              <span class="experience-place">Accenture</span>
+              <span class="experience-date">Apr 2021 - Sep 2021</span>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                All the study in Frontend, combined with my knowledge of C# in
+                Backend and the design pattern of Automation, opened the doors
+                for me at Accenture where as a QA Automation I was able to
+                start developing and delivering quality suite of test cases as
+                one of the referals developers of the project. I quit this job
+                (But never stop coding) 2 weeks before coming to Europe.
+              </div>
+            </div>
+          </div>
+          <h3 class="section-title-experience mt-3 mb-0" data-aos="fade-down">
+            Education
+          </h3>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseSix"
+                aria-expanded="true" aria-controls="collapseSix">
+                University degree of Technology Information
+              </button>
+              <span class="experience-place">Universidad Argentina de la Empresa (UADE)</span>
+              <span class="experience-date">Aug 2018 - Currently...</span>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">Computer Science - Web Development</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <button class="btn btn-link experience-role" data-toggle="collapse" data-target="#collapseSeven"
+                aria-expanded="true" aria-controls="collapseSeven">
+                High school degree in Media communication
+              </button>
+              <span class="experience-place">Universidades Tecnicas ORT</span>
+              <span class="experience-date">Aug 2009 - Dec 2014</span>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="card-body">Graphic Design - Photography</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience-outer">
+          <h2 class="section-title-experience mb-2">Experience</h2>
+          <div id="experience-wrapper" class="mb-3">
+            <div class="experience-item">
+              <h2 class="experience-item-role">QA Manual Ssr</h2>
+              <h3 class="experience-item-place">
+                Momentous Technologies / Intive
+              </h3>
+              <p class="experience-item-text">
+                My first job was at Momentous Technologies Corp. as a
+                Trainee/Jr and continued at Intive as a Ssr. I've created
+                daily-smoke, exploratory and functionalities suites of test
+                cases for mobile and web applications and reported bugs in
+                Jira and Azure platforms.
+              </p>
+              <span class="experience-item-date text-muted">Jan 2016 - Feb 2019</span>
+            </div>
+            <div class="experience-item">
+              <h2 class="experience-item-role">QA Automation Jr</h2>
+              <h3 class="experience-item-place">Intive</h3>
+              <p class="experience-item-text">
+                After 2 years in Intive, I was promoted as an automation
+                engineer. The labor as QA Manual, pre-automation, helped me a
+                lot to comprehend the test-in-depth mindset that must be done
+                while coding, so I applied all these knowledge now using C#
+                and Selenium.
+              </p>
+              <span class="experience-item-date text-muted">Mar 2019 - Aug 2019</span>
+            </div>
+            <div class="experience-item">
+              <h2 class="experience-item-role">.NET Developer Jr</h2>
+              <h3 class="experience-item-place">Intive</h3>
+              <p class="experience-item-text">
+                After 6 months as QA Automation, Intive offered me a .NET
+                position, I took it knowing it was going to be very hard to
+                addapt my knowledges once again. As a .NET I've worked more as
+                a bug fixer but I used it to comprehend and analyze the syntax
+                and frameworks used in a large scale proyect.
+              </p>
+              <span class="experience-item-date text-muted">Sep 2019 - Mar 2020</span>
+            </div>
+            <div class="experience-item">
+              <h2 class="experience-item-role">Frontend Developer Trainee</h2>
+              <h3 class="experience-item-place">Freelance / Self-taught</h3>
+              <p class="experience-item-text">
+                I started to learn Frontend and web design as an autodidact to
+                learn all I can about web development to improve my QA
+                Automation seniority. That took me to discover and get used to
+                the programming environment and community, and gave me a much
+                better view of where I was and where I would like to be.
+              </p>
+              <span class="experience-item-date text-muted">Apr 2020 and Currently...</span>
+            </div>
+            <div class="experience-item">
+              <h2 class="experience-item-role">QA Automation Ssr</h2>
+              <h3 class="experience-item-place">Accenture</h3>
+              <p class="experience-item-text">
+                All the study in Frontend, combined with my knowledge of C# in
+                Backend and the design pattern of Automation, opened the doors
+                for me at Accenture where as a QA Automation I was able to
+                start developing and delivering quality suite of test cases as
+                one of the referals developers of the project. I quit this job
+                (But never stop coding) 2 weeks before coming to Europe.
+              </p>
+              <span class="experience-item-date text-muted">Apr 2021 - Oct 2021</span>
+            </div>
+          </div>
+          <h2 class="section-title-experience mb-2">Education</h2>
+          <div id="education-wrapper">
+            <div class="experience-item">
+              <h2 class="experience-item-role">
+                University degree of Technology Information
+              </h2>
+              <h3 class="experience-item-place">
+                Universidad Argentina de la Empresa (UADE)
+              </h3>
+              <p class="experience-item-text">
+                Computer Science - Web Development
+              </p>
+              <span class="experience-item-date text-muted">Aug 2018 - Currently</span>
+            </div>
+            <div class="experience-item">
+              <h2 class="experience-item-role">
+                High school degree in Media communication
+              </h2>
+              <h3 class="experience-item-place">
+                Universidades Tecnicas ORT
+              </h3>
+              <p class="experience-item-text">Graphic Design - Photography</p>
+              <span class="experience-item-date text-muted">Aug 2009 - Dec 2014</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section-main panel" id="skills">
+      <div class="section-main-content" id="skills-container">
+        <h2 class="skill-header">Skills</h2>
+        <div class="dev-icons">
+          <div class="icon-container" id="frontend-skills">
+            <h3 class="skill-subheader">Front-End</h3>
+            <div class="fa-2x list-icons">
+              <div class="icon-box">
+                <i class="fab fa-html5"></i>
+                <h4>HTML5</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-css3"></i>
+                <h4>CSS3</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-bootstrap"></i>
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-js-square"></i>
+                <h4>Javascript</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-react"></i>
+                <h4>React</h4>
+              </div>
+            </div>
+          </div>
+          <div class="icon-container" id="backend-skills">
+            <h3 class="skill-subheader">Back-End</h3>
+            <div class="fa-2x list-icons">
+              <div class="icon-box">
+                <i>
+                  <img class="png-icon" src="img/icons/csharp.png" alt="csharp-icon" />
+                </i>
+                <h4>C#</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-python"></i>
+                <h4>Python</h4>
+              </div>
+              <div class="icon-box">
+                <i>
+                  <img class="png-icon" src="img/icons/flask.png" alt="flask-icon" />
+                </i>
+                <h4>Flask</h4>
+              </div>
+              <div class="icon-box">
+                <i>
+                  <img class="png-icon" src="img/icons/django.png" alt="django-icon" />
+                </i>
+                <h4>Django</h4>
+              </div>
+            </div>
+          </div>
+          <div class="icon-container" id="automation-skills">
+            <h3 class="skill-subheader">Automation</h3>
+            <div class="fa-2x list-icons">
+              <div class="icon-box">
+                <i>
+                  <img class="png-icon" src="img/icons/selenium.png" alt="selenium-icon" />
+                </i>
+                <h4>Selenium</h4>
+              </div>
+            </div>
+          </div>
+          <div class="icon-container" id="database-skills">
+            <h3 class="skill-subheader">Database</h3>
+            <div class="fa-2x list-icons">
+              <div class="icon-box">
+                <i class="fas fa-database"></i>
+                <h4>SQL Syntax</h4>
+              </div>
+              <div class="icon-box">
+                <i>
+                  <img class="png-icon" src="img/icons/mysql.png" alt="mysql-icon" />
+                </i>
+                <h4>MySQL</h4>
+              </div>
+            </div>
+          </div>
+          <div class="icon-container" id="other-skills">
+            <h3 class="skill-subheader">Other</h3>
+            <div class="fa-2x list-icons">
+              <div class="icon-box">
+                <i class="fab fa-windows"></i>
+                <h4>Windows 10 Venv</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fas fa-desktop"></i>
+                <h4>PC builing (PCMR)</h4>
+              </div>
+            </div>
+          </div>
+          <div class="icon-container" id="collaborative-skills">
+            <h3 class="skill-subheader">Collaborative Programming</h3>
+            <div class="fa-2x list-icons">
+              <div class="icon-box">
+                <i class="fab fa-trello"></i>
+                <h4>Trello</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-atlassian"></i>
+                <h4>Jira (Scrum)</h4>
+              </div>
+              <div class="icon-box">
+                <i>
+                  <img class="png-icon azure-icon" src="img/icons/azure.png" alt="azure-icon" />
+                </i>
+                <h4>Azure (Scrum)</h4>
+              </div>
+              <div class="icon-box">
+                <i>
+                  <img class="hiptest-icon" src="img/icons/hiptest.png" alt="hiptest-icon" />
+                </i>
+                <h4>Hiptest</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-jenkins"></i>
+                <h4>Jenkins</h4>
+              </div>
+              <div class="icon-box">
+                <i class="fab fa-git-alt"></i>
+                <h4>Git</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section-main panel" id="projects">
+      <div class="section-main-content" id="projects-container">
+        <h2 class="mb-3 section-project-title">Personal Projects</h2>
+        <ul id="project-list">
+          <li>
+            <h3 class="projects-header">River Plate</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">
+                  River Plate website
+                </div>
+                <span class="projects-link-external"><a href="" target="_blank">Web</a></span>
+                <span class="projects-link-external"><a
+                    href="https://github.com/brunoleonpuca/PYTHON/tree/master/river-project" target="_blank">Source
+                    code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/01-river-project.JPG" alt="river-plate" />
+            </div>
+          </li>
+          <li>
+            <h3 class="projects-header">Portfolio v1</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">Portfolio v1 Description</div>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Web</a></span>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Source code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <h3 class="projects-header">To do's</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">To do's using React</div>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Web</a></span>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Source code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <h3 class="projects-header">Moviefy</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">Moviefy: Description</div>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Web</a></span>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Source code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <h3 class="projects-header">Studify</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">Studify: Description</div>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Web</a></span>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Source code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <h3 class="projects-header">Futbol Scraper</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">Futbol Scraper: Description</div>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Web</a></span>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Source code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <h3 class="projects-header">Zero Fear Cooking</h3>
+            <div class="projects-item">
+              <div class="projects-hover">
+                <div class="projects-subheader">ZFC: Description</div>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Web</a></span>
+                <span class="projects-link-external"><a href="" target="_blank" class="disabled">Source code</a></span>
+              </div>
+              <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESOURCES SECTION -->
+    <section class="section-main panel" id="resources">
+      <div class="section-main-content" id="resources-container">
+        <h2 class="section-resources-title">Resources</h2>
+        <div class="nav flex-row nav-pills" id="pills-tab" role="tablist" aria-orientation="horizontal">
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME SECTION -->
+    <section class="section-main panel" id="contact">
+      <div class="section-main-content" id="contact-container">
+        <h2 class="section-contact-title mb-3">Contact Me</h2>
+        <div class="section-main-content" id="contact-form">
+          <form action="https://formspree.io/f/xgeplpea" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="form-name" placeholder="Your Name *"
+                    data-validation-required-message="Please enter your name." autocomplete="off" required />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="email" name="_replyto" class="form-control" id="email" placeholder="Your Email *"
+                    data-validation-required-message="Please enter your email address." autocomplete="off" required />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group form-group-textarea">
+                  <textarea class="form-control" name="message" id="message" placeholder="Your Message *"
+                    required="required" data-validation-required-message="Please enter a message." cols="50"
+                    rows="6"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-secondary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+                Send!
+              </button>
+              <h4 class="subheading mt-3 text-muted">
+                An email will be sent to my inbox automatically.
+              </h4>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- <script type="text/javascript" src="static/js/aos.js"></script> -->
+
+  <!-- <script type="text/javascript">
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script> -->
+
+  <script src="static/js/resources.js"></script>
+  <script src="static/js/experience.js"></script>
+  <script src="index.js"></script>
+  <script src="scroll.js"></script>
+</body>
+
+</html>
