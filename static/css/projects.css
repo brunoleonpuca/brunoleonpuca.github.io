@@ -4,6 +4,7 @@
     justify-content: flex-start;
     padding-block-start: 2rem;
     /* height: 86%; */
+    width: 100%;
   }
   
   .section-project-title {
@@ -12,7 +13,7 @@
   
   #project-list {
     padding: 0;
-    width: 110%;
+    /* width: 110%; */
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;

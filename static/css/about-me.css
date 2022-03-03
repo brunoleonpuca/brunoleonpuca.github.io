@@ -91,7 +91,7 @@
 #about-inner-bottom {
     flex: 1 1 30%;
     height: 50%;
-    width: 80%;
+    /* width: 80%; */
 }
 
 #about-inner-top {
@@ -137,7 +137,7 @@
     justify-content: space-evenly;
     height: 50%;
     padding-block-start: 0.5rem;
-    padding: 10px 1.5rem;
+    padding: 18px 10px;
     border-radius: 15%;
     border: 1px solid var(--neon-green);
     margin: 1px 1px;
@@ -146,6 +146,7 @@
 }
 
 .about-cards>.icon {
+    place-content: center;
     color: var(--white);
     font-size: var(--size-about-icons);
 }

@@ -2,6 +2,7 @@
 #contact-container {
     justify-content: flex-start;
     /* height: 85%; */
+    width: 90%;
   }
   
   #contact-container .section-contact-title {

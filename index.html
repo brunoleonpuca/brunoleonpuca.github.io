@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://kit.fontawesome.com/6405a22b9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/nav.css" type="text/css" />
     <link rel="stylesheet" href="static/css/about-me.css" type="text/css" />
     <link rel="stylesheet" href="static/css/experience.css" type="text/css" />
     <link rel="stylesheet" href="static/css/skills.css" type="text/css" />
@@ -17,6 +21,51 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md fixed-top transparent bg-color" id="sideNav">
+        <a class="navbar-caption text-black logo-collapsed nav-link" href="#about" id="logo">
+            BLP
+        </a>
+        <a class="navbar-toggler collapsed navbar-toggler-icon" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" id="nav-buttons" data-app-modern-menu="true">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <div class="navbar-logo">
+                    <div class="navbar-brand">
+                        <span class="navbar-caption-wrap">
+                            <a class="navbar-caption logo-list nav-link" href="#about" id="logo">
+                                BLP
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-buttons" id="download-cv"><a href="cv">CV</a></div>
+    </nav>
+
     <div class="hideMe">
         <svg id="leftArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <g stroke-linejoin="round" stroke-linecap="round">

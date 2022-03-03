@@ -7,11 +7,13 @@ let offsets = [];
 let oldSlide = 0;
 let activeSlide = 0;
 let dots = document.querySelector(".dots");
+// let navLinks = document.querySelectorAll(".nav-link");
 let navDots = [];
 let iw = window.innerWidth;
 
 document.querySelector("#leftArrow").addEventListener("click", slideAnim);
 document.querySelector("#rightArrow").addEventListener("click", slideAnim);
+// document.querySelectorAll(".nav-link").addEventListener("click", slideAnim);
 
 // create the nav dots
 for (let i = 0; i < slides.length; i++) {

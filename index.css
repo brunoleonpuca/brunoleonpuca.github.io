@@ -247,22 +247,9 @@ section {
     height: 40px;
     stroke-width: 8px;
     stroke: white;
+    border: 1px solid var(--neon-green);
+    border-radius: 50%;
     fill: transparent;
-}
-
-h1 {
-    position: absolute;
-    z-index: 100;
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    text-transform: capitalize;
-}
-
-span {
-    display: block;
-    font-size: 0.75em;
-    font-weight: 400;
 }
 
 .titleWrap {
@@ -278,37 +265,6 @@ span {
     height: 30px;
     line-height: 30px;
     text-align: center;
-}
-
-h3,
-p {
-    padding: 0;
-    margin: 0;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-p {
-    max-width: 400px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.twitterFollow {
-    padding: 16px;
-    margin-top: 16px;
-    cursor: pointer;
-    border-radius: 500px;
-    text-decoration: none;
-    border: solid 2px white;
-    color: white;
-}
-
-.twitterFollow:hover {
-    background: white;
-    color: #000;
 }
 
 .hideMe {
