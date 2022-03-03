@@ -1,6 +1,24 @@
 $(document).ready(function () {
   "use strict"
 
+  $(document).on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
+  $("#myModal").modal('show');
+
+  $("#myModal").on("show", function () {
+    $("body").addClass("modal-open");
+  }).on("hidden", function () {
+    $("body").removeClass("modal-open")
+  });
+
+  $('div[class="project-hover"]').click(function (e) {
+    // <--- don't miss this e
+    if ($(this).css("opacity") == 0) e.preventDefault();
+
+  });
+
   const text = document.querySelector("#name");
   const strText = text.textContent;
   const splitText = strText.split("");
