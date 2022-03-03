@@ -2,8 +2,6 @@
 
 #projects-container {
     justify-content: flex-start;
-    padding-block-start: 2rem;
-    /* height: 86%; */
     width: 100%;
   }
   
@@ -13,7 +11,6 @@
   
   #project-list {
     padding: 0;
-    /* width: 110%; */
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +37,6 @@
   }
   
   .projects-item .projects-hover {
-    /* pointer-events: none; */
     height: 100%;
     padding: 10px 4px;
     display: flex;
@@ -50,7 +46,6 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: rgb(33 12 2 / 77%);
-    /* -webkit-background-composite: rgb(33 12 2 / 77%); */
     position: absolute;
     top: 0;
     left: 0;
