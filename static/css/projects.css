@@ -50,6 +50,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: rgb(33 12 2 / 77%);
+    -webkit-background-composite: rgb(33 12 2 / 77%);
     position: absolute;
     top: 0;
     left: 0;
