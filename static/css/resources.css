@@ -1,0 +1,109 @@
+#resources-container {
+    width: 110%;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    height: 80%;
+  }
+  
+  #resources-container .section-resources-title {
+    font-size: var(--size-resources-header);
+    margin: 0;
+  }
+  
+  #pills-tabContent>table>thead {
+    font-size: var(--size-resources-header);
+  }
+  
+  #pills-tabContent>table>tbody>tr>td:nth-child(3) {
+    font-size: var(--size-resources-description);
+  }
+  
+  #pills-tab .nav-link:not(.active) {
+    background-color: transparent;
+    color: var(--neon-green);
+    box-shadow: var(--dark-box-shadow);
+    /* box-shadow: inset 0px 3px 7px #d6d6e7; */
+    transform: translateY(2px);
+  }
+  
+  #pills-tab .nav-link:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+      0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transform: translateY(-2px);
+  }
+  
+  #pills-tab .nav-link {
+    font-size: var(--size-resources-tabs);
+    background-color: transparent;
+    border: 1px solid var(--neon-green);
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    will-change: box-shadow, transform;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+      0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  
+  .tab-content {
+    width: 100%;
+  }
+  
+  .tab-content .tab-pane {
+    /* padding: 1rem; */
+  }
+  
+  table>thead>tr>th:nth-child(4) {
+    text-align: center;
+  }
+  
+  .tab-pane a {
+    color: var(--neon-green);
+    font-size: var(--size-resources-link);
+  }
+  
+  table>tbody>tr>td:nth-child(1),
+  table>tbody>tr>td:nth-child(2) {
+    font-size: var(--size-resources-title);
+  }
+  
+  table>tbody>tr>td:nth-child(2) {
+    color: var(--neon-green);
+  }
+  
+  table>tbody>tr>td:nth-child(3) {
+    font-size: var(--size-resources-description);
+  }
+  
+  table>tbody>tr>td:nth-child(4) {
+    text-align-last: center;
+  }
+  
+  .tab-pane .table td,
+  .tab-pane .table th {
+    padding: 2px;
+    vertical-align: middle;
+  }
+  
+  #pills-Courses>table>tbody>tr>td:nth-child(3) {}
+  
+  /********************** START MEDIA CONTENT - RESOURCES SECTION ***************************/
+  @media only screen and (min-width: 786px) {
+    #resources-container {
+      padding-block-start: 1rem;
+    }
+  
+    .tab-content .tab-pane {
+      padding: 1rem;
+    }
+  
+    .tab-pane .table td,
+    .tab-pane .table th {
+      padding: 0px;
+    }
+  }
+  
+  /********************** END MAIN CONTENT - RESOURCES SECTION ***************************/
+  /********************** END GENERAL CONTENT - RESOURCES SECTION ***************************/

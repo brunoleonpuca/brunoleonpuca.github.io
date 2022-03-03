@@ -1,0 +1,234 @@
+/********************** MAIN CONTENT - ABOUT ME SECTION ***************************/
+#about-container {
+    font-family: var(--font-body);
+    display: flex;
+    justify-content: space-evenly !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.title-separator {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    background-color: var(--neon-green);
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+.about-header span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+.about-header span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+    animation: headerAnimation 5s infinite 2s ease-in-out;
+}
+
+@keyframes headerAnimation {
+    0% {
+        color: var(--neon-green);
+    }
+
+    20% {
+        color: var(--white);
+    }
+
+    100% {
+        color: var(--white);
+    }
+}
+
+#name {
+    font-size: var(--size-title);
+    text-transform: uppercase;
+    white-space: normal;
+    text-align-last: center;
+}
+
+.about-header {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.about-subheader {
+    font-size: var(--size-subtitle);
+    color: var(--neon-green);
+    max-width: 460px;
+}
+
+#about-inner-top>a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--size-subheader);
+}
+
+#about-inner-top>p {
+    font-size: var(--size-subheader);
+}
+
+#about {
+    background-color: #252829;
+}
+
+.about-inner-bottom-wrapper {
+    justify-items: center;
+}
+
+#about-inner-top,
+#about-inner-bottom {
+    flex: 1 1 30%;
+    height: 50%;
+    width: 80%;
+}
+
+#about-inner-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: -webkit-center;
+    align-content: center;
+    align-items: center;
+}
+
+#about-inner-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+}
+
+.about-inner-bottom-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 70%;
+    width: 110%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-cards {
+    flex: 0 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    padding-block-start: 0.5rem;
+    padding: 10px 1.5rem;
+    border-radius: 15%;
+    border: 1px solid var(--neon-green);
+    margin: 1px 1px;
+    box-shadow: var(--dark-box-shadow);
+    text-align: center;
+}
+
+.about-cards>.icon {
+    color: var(--white);
+    font-size: var(--size-about-icons);
+}
+
+.about-cards>.icon-title {
+    width: 120%;
+    text-transform: uppercase;
+    color: var(--neon-green);
+}
+
+.about-cards>.icon-description {
+    display: none;
+}
+
+.social-icons {
+    margin-top: 1rem;
+    margin-bottom: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+    flex: 0 1 18%;
+    transition: 0.2s;
+}
+
+.social-icons .social-icon {
+    margin: 0 1rem;
+    max-width: 45px;
+    /* height: 100px; */
+    box-shadow: var(--dark-box-shadow);
+}
+
+.social-icons .social-icon:hover {
+    border: 1px solid var(--neon-green);
+}
+
+.social-icons .social-icon {
+    font-size: var(--size-about-social-icons);
+}
+
+/*************************** ABOUT CONTAINER MEDIA QUERIES *********************************/
+@media only screen and (min-width: 768px) {
+    #about-container {
+        justify-content: center;
+    }
+
+    #about-inner-top {
+        justify-content: center;
+        flex: 0 1 30%;
+    }
+
+    #about-inner-bottom {
+        flex: 0 1 50%;
+    }
+
+    .about-inner-bottom-wrapper {
+        align-items: stretch;
+        width: 150%;
+    }
+
+    .about-cards {
+        flex: 0 1 15%;
+        height: auto;
+    }
+
+    .about-cards>.icon-description {
+        display: block;
+    }
+
+    .social-icons {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        max-width: 4rem;
+    }
+
+    .social-icons .social-icon {
+        margin: 0 20px;
+        border-radius: 50%;
+        color: #fff;
+        min-width: 4rem;
+    }
+}
+
+/*************************** END ABOUT CONTAINER MEDIA QUERIES *********************************/

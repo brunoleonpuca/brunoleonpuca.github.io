@@ -1,0 +1,129 @@
+/********************** MAIN CONTENT - SKILLS SECTION ***************************/
+#skills-container {
+  width: 110%;
+  justify-content: center;
+  text-align: center;
+  height: 92%;
+}
+
+#skills-container>h2 {
+  font-size: var(--size-skills-title);
+}
+
+.dev-icons {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-container {
+  padding: 1px 1px;
+  flex: 0 1 100%;
+  /* border: 1px solid var(--neon-green); */
+  border-radius: 2%;
+}
+
+.icon-container>h3 {
+  color: var(--neon-green);
+  margin: 0;
+  margin-top: 2px;
+  font-size: var(--size-skills-header);
+  text-transform: uppercase;
+}
+
+.list-icons {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#automation-skills,
+#database-skills,
+#other-skills {
+  flex: 1 1 30%;
+}
+
+#collaborative-skills {
+  flex: 1 1 100%;
+}
+
+.icon-box {
+  border-radius: 10%;
+  flex: 0 1 13%;
+  margin: 1px 5px;
+  box-shadow: var(--dark-box-shadow);
+}
+
+.icon-box>i {
+  font-size: var(--size-skills-icons);
+}
+
+.icon-box>h4 {
+  font-size: var(--size-skills-subheader);
+}
+
+.png-icon {
+  width: var(--size-skills-png-icons);
+  filter: invert(1);
+}
+
+.hiptest-icon {
+  width: var(--size-skills-png-icons);
+  filter: grayscale();
+}
+
+@media only screen and (min-width: 786px) {
+  #skills-container {
+    height: 110%;
+    padding-block-start: 2rem;
+  }
+
+  .dev-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .icon-container {
+    flex: 0 1 60%;
+  }
+
+  .list-icons {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #automation-skills,
+  #database-skills,
+  #other-skills {
+    flex: 0 1 22%;
+  }
+
+  #collaborative-skills {
+    flex: 0 1 100%;
+  }
+
+  .icon-box {
+    border-radius: 10%;
+    flex: 1 1 15%;
+    margin: 1px 5px;
+    box-shadow: var(--dark-box-shadow);
+  }
+}
+
+/********************** END MEDIA QUERIES - SKILLS SECTION ***************************/
+
+/********************** END MAIN CONTENT - SKILLS SECTION ***************************/

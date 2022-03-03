@@ -1,0 +1,188 @@
+/* ************************* NAV BAR SECTION ******************* */
+
+nav {
+    background-color: transparent !important;
+    background-image: var(--black-glass-gradient) !important;
+    box-shadow: var(--dark-box-shadow);
+    align-items: flex-start !important;
+  }
+  
+  .navbar {
+    padding: 0 !important;
+  }
+  
+  #nav-buttons>li {
+    background-color: transparent;
+    margin-left: 1rem;
+    border-radius: 0.1rem;
+    transition: font-weight 80ms, background-color 80ms, border 80ms;
+  }
+  
+  #nav-buttons>li>a {
+    font-family: var(--font-nav);
+    font-size: var(--size-nav);
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  
+  #nav-buttons>li>a:hover {
+    color: var(--neon-green) !important;
+  }
+  
+  #nav-buttons>li:hover {
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid var(--neon-green);
+  }
+  
+  #logo {
+    font-family: var(--font-logo);
+    font-size: var(--size-logo-nav);
+    letter-spacing: -3px;
+    text-decoration: none;
+    color: var(--light-green) !important;
+    margin-left: 10px;
+    padding: 0;
+    /* border: 1px solid var(--neon-green); */
+  }
+  
+  .logo-list {
+    display: none !important;
+  }
+  
+  .navbar-expand .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .navbar-brand {
+    padding-bottom: 0px !important;
+  }
+  
+  .navbar-toggler-icon {
+    margin-top: 8px;
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-toggler span {
+    display: block;
+    background-color: var(--neon-green);
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+  }
+  
+  /* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+  }
+  
+  /* center line goes transparent */
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  /* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+  }
+  
+  /* top line moves back to initial position and rotates back to 0 degrees */
+  .navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  /* middle line goes back to regular color and opacity */
+  .navbar-toggler span:nth-child(2) {
+    opacity: 1;
+  }
+  
+  /* bottom line goes back to initial position and rotates back to 0 degrees */
+  .navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-buttons {
+    margin-right: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  #nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  #download-cv {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    nav {
+      background-color: transparent !important;
+      background-image: none !important;
+      font-family: var(--font-nav);
+      text-transform: uppercase;
+    }
+  
+    .navbar-expand-md {
+      padding: 0 !important;
+    }
+  
+    .navbar-expand-md .navbar-collapse {
+      justify-content: center;
+    }
+  
+    #nav-buttons {
+      flex-direction: row;
+      align-items: center;
+      width: max(60rem, 80%);
+      justify-content: space-between;
+    }
+  
+    #nav-buttons>li {
+      /* margin-left: clamp(-7px, 1vh + 0.5rem, 50px); */
+      /* margin: 0 clamp(0.8rem, 1vh + 0.3rem , 3.2rem); */
+    }
+  
+    .logo-collapsed {
+      display: none !important;
+    }
+  
+    .logo-list {
+      display: block !important;
+      text-align: center;
+    }
+  
+    #download-cv {
+      padding: 0 0.8rem;
+      margin: 0.4rem;
+      border-radius: 0.5rem;
+      border: 2px solid black;
+      transition: font-weight 80ms, background-color 80ms, border 80ms;
+    }
+  
+    #download-cv:hover {
+      cursor: pointer;
+      font-weight: 600;
+      border: 3px solid #1eb99b;
+    }
+  
+    #download-cv>a {
+      text-decoration: none;
+    }
+  }
+  
+  /* ************************* ENDSECTION ******************* */
