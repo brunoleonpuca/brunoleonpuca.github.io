@@ -63,20 +63,22 @@ dotAnim.to(
 dotAnim.time(1);
 
 // make the whole thing draggable
-let dragMe = Draggable.create(container, {
-    type: "x",
-    edgeResistance: 1,
-    snap: offsets,
-    inertia: true,
-    bounds: "#masterWrap",
-    onDrag: tweenDot,
-    onThrowUpdate: tweenDot,
-    onDragEnd: slideAnim,
-    allowNativeTouchScrolling: false,
-    zIndexBoost: false
-});
+// let dragMe = Draggable.create(container, {
+//     type: "x",
+//     throwProps: true,
+//     edgeResistance: 1,
+//     snap: offsets,
+//     inertia: true,
+//     bounds: "#masterWrap",
+//     onDrag: tweenDot,
+//     onThrowUpdate: tweenDot,
+//     onDragEnd: slideAnim,
+//     allowNativeTouchScrolling: false,
+//     zIndexBoost: false,
+    
+// });
 
-dragMe[0].id = "dragger";
+// dragMe[0].id = "dragger";
 sizeIt();
 
 // main action check which of the 4 types of interaction called the function
@@ -132,7 +134,7 @@ function sizeIt() {
     gsap.set(container, {
         x: offsets[activeSlide]
     });
-    dragMe[0].vars.snap = offsets;
+    // dragMe[0].vars.snap = offsets;
 }
 
 gsap.set(".hideMe", {
@@ -147,6 +149,8 @@ function tweenDot() {
         time: Math.abs(gsap.getProperty(container, "x") / iw) + 1
     });
 }
+
+draggable.disable();
 
 gsap.to("#floating-button", {
     autoAlpha: 1,
