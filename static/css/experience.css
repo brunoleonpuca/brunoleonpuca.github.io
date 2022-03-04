@@ -1,5 +1,6 @@
 /********************** MAIN CONTENT - EXPERIENCE SECTION ***************************/
 #experience-container {
+  font-family: var(--font-body);
   text-align: center;
   align-items: initial;
   align-content: initial;

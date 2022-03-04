@@ -1,6 +1,5 @@
 #resources-container {
-    /* width: 110%; */
-    /* align-items: flex-start; */
+    font-family: var(font);
     justify-content: flex-start;
     height: 80%;
   }
@@ -22,7 +21,6 @@
     background-color: transparent;
     color: var(--neon-green);
     box-shadow: var(--dark-box-shadow);
-    /* box-shadow: inset 0px 3px 7px #d6d6e7; */
     transform: translateY(2px);
   }
   

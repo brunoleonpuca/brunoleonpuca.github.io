@@ -1,9 +1,9 @@
 /********************** MAIN CONTENT - SKILLS SECTION ***************************/
 #skills-container {
-  /* width: 110%; */
+  font-family: var(--font-body);
+  width: 80%;
   justify-content: center;
   text-align: center;
-  /* height: 92%; */
 }
 
 #skills-container>h2 {
@@ -47,7 +47,7 @@
 #automation-skills,
 #database-skills,
 #other-skills {
-  flex: 1 1 30%;
+  flex: 1 1 40%;
 }
 
 #collaborative-skills {

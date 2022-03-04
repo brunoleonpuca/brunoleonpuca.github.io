@@ -1,44 +1,53 @@
 /********************** START MAIN CONTENT - CONTACT SECTION ***************************/
+#contact {
+  padding-block-start: 2rem;
+  justify-content: center;
+}
+
 #contact-container {
-    width: 90%;
+  width: 70%;
+}
+
+#contact-container .section-contact-title {
+  font-size: var(--size-contact-header);
+}
+
+#contact-form form input,
+#contact-form form textarea,
+#contact-form form button {
+  font-size: var(--size-text-medium);
+  border: 1px solid var(--neon-green);
+  color: var(--ff--color-secondary);
+  background-color: var(--color-background-form);
+}
+
+#contact-form form textarea {
+  resize: none;
+}
+
+#contact-form form button {
+  width: 110px;
+  height: 35px;
+  box-shadow: var(--dark-box-shadow);
+}
+
+#contact-form form button:hover {
+  background-color: #36302c;
+}
+
+#contact-form form button:active {
+  box-shadow: var(--dark-box-shadow);
+  transform: scale(0.95, 0.95);
+}
+
+#contact-form h4 {
+  font-size: var(--size-contact-muted);
+}
+
+@media only screen and (min-width: 786px) {
+  #contact-container {
+    padding-block-start: 1rem;
   }
-  
-  #contact-container .section-contact-title {
-    font-size: var(--size-contact-header);
-  }
-  
-  #contact-form form input,
-  #contact-form form textarea,
-  #contact-form form button {
-    font-size: var(--size-text-medium);
-    border: 1px solid var(--neon-green);
-    color: var(--ff--color-secondary);
-    background-color: var(--color-background-form);
-  }
-  
-  #contact-form form textarea {
-    resize: none;
-  }
-  
-  #contact-form form button {
-    width: 110px;
-    height: 35px;
-    box-shadow: var(--dark-box-shadow);
-  }
-  
-  #contact-form form button:hover {
-    background-color: #36302c;
-  }
-  
-  #contact-form form button:active {
-    box-shadow: var(--dark-box-shadow);
-    transform: scale(0.95, 0.95);
-  }
-  
-  @media only screen and (min-width: 786px) {
-    #contact-container {
-      padding-block-start: 1rem;
-    }
-  }
-  
-  /********************** END MAIN CONTENT - CONTACT SECTION ***************************/
+}
+
+/********************** END MAIN CONTENT - CONTACT SECTION ***************************/

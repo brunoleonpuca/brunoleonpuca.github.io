@@ -60,6 +60,10 @@ nav {
   .navbar-brand {
     padding-bottom: 0px !important;
   }
+
+  .navbar-toggler {
+    align-self: center;
+  }
   
   .navbar-toggler-icon {
     margin-top: 8px;
