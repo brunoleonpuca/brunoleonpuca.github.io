@@ -13,13 +13,9 @@ let iw = window.innerWidth;
 
 document.querySelector("#leftArrow").addEventListener("click", slideAnim);
 document.querySelector("#rightArrow").addEventListener("click", slideAnim);
-
-// document.querySelector("#nav-about").addEventListener("click", slideAnim);
-// document.querySelector("#nav-experience").addEventListener("click", slideAnim);
-// document.querySelector("#nav-skills").addEventListener("click", slideAnim);
-// document.querySelector("#nav-project").addEventListener("click", slideAnim);
-// document.querySelector("#nav-resources").addEventListener("click", slideAnim);
-// document.querySelector("#nav-contact").addEventListener("click", slideAnim);
+document.querySelector("#modalContact").addEventListener("click", slideAnim);
+document.querySelector("#logo-list").addEventListener("click", slideAnim);
+document.querySelector("#logo-collapsed").addEventListener("click", slideAnim);
 
 // create nav links
 for (let i = 0; i < slides.length; i++) {
@@ -122,10 +118,14 @@ function slideAnim(e) {
         } else if (this.className === "dot") {
             activeSlide = this.index;
             // scrollwheel
-        } else if (this.className === "nav-link"){
+        } else if (this.className === "nav-link") {
             activeSlide = this.index;
-        } 
-        else {
+        } else if (this.id === "modalContact") {
+            activeSlide = slides.length;
+        } else if (this.id === "logo-list" || this.id === "logo-collapsed")  {
+            activeSlide = 0;
+        } else {
+            // console.log("here")
             activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
         }
     }

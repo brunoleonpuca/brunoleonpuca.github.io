@@ -29,6 +29,7 @@
 }
 
 .projects-item {
+  position: relative;
   width: 80%;
   filter: drop-shadow(2px 4px 6px black);
 }
@@ -39,6 +40,7 @@
 
 .projects-item .projects-hover {
   height: 100%;
+  position: absolute;
   padding: 10px 4px;
   display: flex;
   flex-direction: row;
@@ -51,7 +53,7 @@
   top: 0;
   left: 0;
   right: 0;
-  /* bottom: 48px; */
+  bottom: 0px; 
   text-align: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;

@@ -15,16 +15,16 @@ let qamanual_1 = new experience(
     "My first job was at Momentous Technologies Corp. as a Trainee/Jr and continued at Intive as a Ssr. I've created daily-smoke, exploratory and functionalities suites of test cases for mobile and web applications and reported bugs in Jira and Azure platforms.")
 );
 
-console.log(qamanual_1);
+// console.log(qamanual_1);
 
 let mobile = document.getElementsByClassName('card');
 let web = document.getElementsByClassName('experience-item');
 for (let index = 0; index < mobile.length; index++) {
     const mobileelement = mobile[index];
-    console.log(mobileelement.innerHTML);
+    // console.log(mobileelement.innerHTML);
 
     const webelelement = web[index];
-    console.log(webelelement.innerHTML);
+    // console.log(webelelement.innerHTML);
 }
 
 

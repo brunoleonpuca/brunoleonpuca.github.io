@@ -22,9 +22,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md fixed-top" id="sideNav">
-        <a class="navbar-caption text-black logo-collapsed"id="logo">
-            BLP
-        </a>
+        <a class="logo navbar-caption text-black" id="logo-collapsed">BLP</a>
         <a class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span> </span>
@@ -34,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav" id="nav-buttons" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link"id="nav-about">About Me</a>
+                    <a class="nav-link" id="nav-about">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="nav-experience">Experience</a>
@@ -45,9 +43,7 @@
                 <div class="navbar-logo">
                     <div class="navbar-brand">
                         <span class="navbar-caption-wrap">
-                            <a class="navbar-caption logo-list" id="logo">
-                                BLP
-                            </a>
+                            <a class="logo navbar-caption" id="logo-list">BLP</a>
                         </span>
                     </div>
                 </div>
@@ -90,10 +86,9 @@
                     </span>
                 </div>
                 <div class="modal-body">
-                    <button><a href="assets/Bruno Leon Pucarelli - CV 2022.pdf" target="_blank">See my CV</a></button>
-                    <button><a class="nav-link js-scroll-trigger" href="#contact" class="close"
-                            data-dismiss="modal">Contact
-                            Me</a></button>
+                    <a type="button" href="assets/Bruno Leon Pucarelli - CV 2022.pdf" target="_blank">See my CV</a>
+                    <a type="button" id="modalContact" data-dismiss="modal">Contact
+                        Me</a>
                 </div>
             </div>
         </div>
@@ -665,7 +660,8 @@
                                         <div class="projects-subheader">Futbol Scraper: Description</div>
                                         <span class="projects-link-external"><a href="" target="_blank"
                                                 class="disabled">Web</a></span>
-                                        <span class="projects-link-external"><a href="https://github.com/brunoleonpuca/ProyectoFutbol" target="_blank"
+                                        <span class="projects-link-external"><a
+                                                href="https://github.com/brunoleonpuca/ProyectoFutbol" target="_blank"
                                                 class="disabled">Source code</a></span>
                                     </div>
                                     <img class="img-fluid rounded" src="img/projects/in-progress.png" alt="" />
