@@ -61,11 +61,19 @@
   box-shadow: var(--dark-box-shadow);
 }
 
+#automation-skills .icon-box,
+#database-skills .icon-box,
+#other-skills .icon-box {
+  flex: 0 1 38%;
+}
+
 .icon-box>i {
   font-size: var(--size-skills-icons);
 }
 
 .icon-box>h4 {
+  margin-top: 1px;
+  font-family: 'Rajdhani';
   font-size: var(--size-skills-subheader);
 }
 
@@ -94,7 +102,12 @@
   }
 
   .icon-container {
+    margin-top: 3px;
     flex: 0 1 60%;
+  }
+
+  .icon-container>h3 {
+    margin-bottom: 4px;
   }
 
   .list-icons {

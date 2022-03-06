@@ -1,5 +1,5 @@
 #resources-container {
-    font-family: var(font);
+    font-family: var(--font-body);
     justify-content: flex-start;
     height: 80%;
   }
@@ -72,6 +72,7 @@
   }
   
   table>tbody>tr>td:nth-child(3) {
+    font-weight: 300;
     font-size: var(--size-resources-description);
   }
   
@@ -90,9 +91,14 @@
   /********************** START MEDIA CONTENT - RESOURCES SECTION ***************************/
   @media only screen and (min-width: 786px) {
     #resources-container {
-      padding-block-start: 1rem;
+      padding-block-start: 2rem;
+      width: 94% !important;
     }
-  
+
+    #pills-tab {
+      justify-content: center;
+    }
+
     .tab-content .tab-pane {
       padding: 1rem;
     }

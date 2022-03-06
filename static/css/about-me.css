@@ -1,13 +1,17 @@
 /********************** MAIN CONTENT - ABOUT ME SECTION ***************************/
+#about {
+    justify-content: flex-start !important;
+}
+
 #about-container {
     font-family: var(--font-body);
     display: flex;
-    justify-content: space-evenly !important;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    height: 77%;
+    height: 80%;
+    padding-block-start: 3rem;
 }
 
 .title-separator {
@@ -118,27 +122,25 @@
 .about-inner-bottom-wrapper {
     display: flex;
     flex-direction: row;
-    flex: 0 0 70%;
-    width: 110%;
+    flex: 0 0 90%;
+    width: 95%;
     height: auto;
     flex-wrap: wrap;
     justify-items: center;
-    align-items: center;
+    align-items: stretch;
     align-content: center;
     justify-content: center;
 }
 
 .about-cards {
-    max-width: 34%;
-    height: 50%;
-    flex: 0 1 40%;
+    min-width: 17%;
     display: flex;
+    flex: 0 1 40%;
     flex-direction: column;
     align-items: center;
     align-content: stretch;
     justify-items: center;
     justify-content: space-evenly;
-    padding-block-start: 0.5rem;
     padding: 12px 10px;
     border-radius: 15%;
     border: 1px solid var(--neon-green);
@@ -154,13 +156,16 @@
 }
 
 .about-cards>.icon-title {
-    width: 120%;
+    /* width: 120%; */
+    word-break: break-word;
     text-transform: uppercase;
     font-size: var(--size-header);
     color: var(--neon-green);
 }
 
 .about-cards>.icon-description {
+    font-size: var(--size-about-icons-description);
+    font-weight: 300;
     display: none;
 }
 
@@ -193,7 +198,7 @@
 /*************************** ABOUT CONTAINER MEDIA QUERIES *********************************/
 @media only screen and (min-width: 768px) {
     #about-container {
-        justify-content: center;
+        height: 92%;
     }
 
     #about-inner-top {
@@ -231,7 +236,7 @@
         margin: 0 20px;
         border-radius: 50%;
         color: #fff;
-        min-width: 4rem;
+        min-width: var(--size-about-sicla-icons-min-width);
     }
 }
 
