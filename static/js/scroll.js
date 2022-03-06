@@ -43,6 +43,10 @@ gsap.set(".arrow", {
 gsap.set(".title", {
     y: 30
 });
+gsap.set(".social-icons-floating", {
+    xPercent: -50,
+    yPercent: -50
+});
 
 // lower screen animation with nav dots and rotating titles
 const dotAnim = gsap.timeline({

@@ -11,6 +11,8 @@ nav {
   padding: 0 !important;
 }
 
+
+
 #nav-buttons>li {
   background-color: transparent;
   margin-left: 1rem;
@@ -56,6 +58,10 @@ nav {
   flex-basis: auto;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+ nav .nav-link {
+  padding: 0;
 }
 
 .navbar-brand {
@@ -155,11 +161,6 @@ nav {
     align-items: center;
     width: max(60rem, 80%);
     justify-content: space-between;
-  }
-
-  #nav-buttons>li {
-    /* margin-left: clamp(-7px, 1vh + 0.5rem, 50px); */
-    /* margin: 0 clamp(0.8rem, 1vh + 0.3rem , 3.2rem); */
   }
 
   #logo-collapsed {

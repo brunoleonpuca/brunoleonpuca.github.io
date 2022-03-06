@@ -1,11 +1,23 @@
 $(document).ready(function () {
   "use strict"
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  })
+
+  //Show tooltip on page load
+  $('#logo-collapsed').tooltip('show');
+  //Hide tooltip after three seconds
+  setTimeout(function () {
+    $('[data-toggle="tooltip"]').tooltip('dispose')
+  }, 3000)
+
+
   $(document).on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
 
-  $("#myModal").modal('show');
+  // $("#myModal").modal('show');
 
   $("#myModal").on("show", function () {
     $("body").addClass("modal-open");

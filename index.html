@@ -22,9 +22,8 @@
 
 <body>
     <nav class="navbar navbar-expand-md fixed-top" id="sideNav">
-        <a class="logo navbar-caption text-black" id="logo-collapsed">BLP</a>
-        <a class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="logo navbar-caption text-black" id="logo-collapsed" data-toggle="tooltip" data-html="true" title="Back to About">BLP</a>
+        <a class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span> </span>
             <span> </span>
             <span> </span>
@@ -43,7 +42,7 @@
                 <div class="navbar-logo">
                     <div class="navbar-brand">
                         <span class="navbar-caption-wrap">
-                            <a class="logo navbar-caption" id="logo-list">BLP</a>
+                            <a class="logo navbar-caption" id="logo-list" data-toggle="tooltip" data-html="true" title="Back to About">BLP</a>
                         </span>
                     </div>
                 </div>
@@ -81,7 +80,7 @@
                             me please
                             contact me by e-mail or send me an automatic message at the last slide. Hope you like my
                             journey, ci
-                            vediamo!
+                            vediamo! (For any visual issues in mobile, try to zoom out in your browser)
                         </p>
                     </span>
                 </div>
@@ -107,31 +106,31 @@
                 <polyline points="40 25, 70 50, 40 75"></polyline>
             </g>
         </svg>
-        <div id="masterWrap">
-            <div class="social-icons-floating">
-                <div class="btn-group dropdown dropleft">
-                    <button id="floating-button" type="button" class="btn row row-cols-1 dropdown-toggle"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
-                            href="https://www.instagram.com/_brunoleonpuca/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
-                            href="https://open.spotify.com/user/11141501240?si=vbsunsbSTRCJhXxtS2YKxg"
-                            target="_blank"><i class="fab fa-spotify"></i></a>
-                        <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
-                            href="https://www.facebook.com/brunoleonpuca/" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
-                            href="https://www.linkedin.com/in/bruno-leon-pucarelli/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
-                            href="https://www.github.com/brunoleonpuca/" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                    </div>
+        <div class="social-icons-floating">
+            <div class="btn-group dropdown dropleft">
+                <button id="floating-button" type="button" class="btn row row-cols-1 dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+                        href="https://www.instagram.com/_brunoleonpuca/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+                        href="https://open.spotify.com/user/11141501240?si=vbsunsbSTRCJhXxtS2YKxg"
+                        target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+                        href="https://www.facebook.com/brunoleonpuca/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+                        href="https://www.linkedin.com/in/bruno-leon-pucarelli/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="dropdown-item social-icon btn btn-dark btn-small btn-social"
+                        href="https://www.github.com/brunoleonpuca/" target="_blank"><i
+                            class="fab fa-github"></i></a>
                 </div>
             </div>
+        </div>
+        <div id="masterWrap">
             <div id="panelWrap">
                 <section class="section-main panel" id="about">
                     <div class="section-main-content" id="about-container">
@@ -220,15 +219,15 @@
                             <h3 class="section-title-experience mb-0  hidden">Experience</h3>
                             <div class="card">
                                 <div class="card-header" id="headingOne">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         QA Manual Ssr
                                     </button>
                                     <span class="experience-place">Momentous Tech. Corp. / Intive</span>
                                     <span class="experience-date">Jan 2016 - Feb 2019</span>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">
                                         My first job was at Momentous Technologies Corp. as a
                                         Trainee/Jr and continued at Intive as a Ssr. I've created
@@ -240,15 +239,15 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                         QA Automation Jr
                                     </button>
                                     <span class="experience-place">Intive</span>
                                     <span class="experience-date">Mar 2019 - Aug 2019</span>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">
                                         After 2 years in Intive, I was promoted as an automation
                                         engineer. The labor as QA Manual, pre-automation, helped me a
@@ -260,15 +259,15 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingThree">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                         .NET Developer Jr
                                     </button>
                                     <span class="experience-place">Intive</span>
                                     <span class="experience-date">Sep 2019 - Mar 2020</span>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">
                                         After 6 months as QA Automation, Intive offered me a .NET
                                         position, I took it knowing it was going to be very hard to
@@ -280,15 +279,15 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingFour">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                         Frontend Developer Trainee
                                     </button>
                                     <span class="experience-place">Freelance / Self-taught</span>
                                     <span class="experience-date">Apr 2020 - Currently...</span>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">
                                         I started to learn Frontend and UI design as an autodidact to
                                         learn all I can about web development to improve my QA
@@ -300,15 +299,15 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingFive">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                                         QA Automation Mid-Level
                                     </button>
                                     <span class="experience-place">Accenture</span>
                                     <span class="experience-date">Apr 2021 - Sep 2021</span>
                                 </div>
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">
                                         All the study in Frontend, combined with my knowledge of C# in
                                         Backend and the design pattern of Automation, opened the doors
@@ -324,29 +323,29 @@
                             </h3>
                             <div class="card">
                                 <div class="card-header" id="headingSix">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                                         University degree of Technology Information
                                     </button>
                                     <span class="experience-place">Universidad Argentina de la Empresa (UADE)</span>
                                     <span class="experience-date">Aug 2018 - Currently...</span>
                                 </div>
                                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">Computer Science - Web Development</div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingSeven">
-                                    <button class="btn btn-link experience-role" data-toggle="collapse"
-                                        data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                    <button class="btn btn-link experience-role" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                                         High school degree in Media communication
                                     </button>
                                     <span class="experience-place">Universidades Tecnicas ORT</span>
                                     <span class="experience-date">Aug 2009 - Dec 2014</span>
                                 </div>
                                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                                    data-parent="#accordion">
+                                    data-bs-parent="#accordion">
                                     <div class="card-body">Graphic Design - Photography</div>
                                 </div>
                             </div>
@@ -776,11 +775,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </script>
 
 <script src="index.js"></script>
