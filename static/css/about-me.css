@@ -198,6 +198,7 @@
 /*************************** ABOUT CONTAINER MEDIA QUERIES *********************************/
 @media only screen and (min-width: 768px) {
     #about-container {
+        padding-block-start: 5rem;
         height: 92%;
     }
 
@@ -208,6 +209,7 @@
 
     #about-inner-bottom {
         flex: 0 1 50%;
+        width: 70%;
     }
 
     .about-inner-bottom-wrapper {

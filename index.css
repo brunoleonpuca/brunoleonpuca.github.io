@@ -127,7 +127,7 @@
     --size-modal: clamp(0.8rem, 3vw + 1rem, 1.2rem);
 
     /* WEB ABOUT */
-    --size-title: clamp(2rem, 3vh + 2rem, 3rem);
+    --size-title: clamp(2rem, 3vh + 2rem, 4rem);
     --size-subtitle: clamp(1.2rem, 2vh + 1rem, 1.5rem);
     --size-header: clamp(1rem, 3vh + 0.2rem, 1.2rem);
     --size-subheader: clamp(0.8rem, 1vh + 0.4rem, 1rem);

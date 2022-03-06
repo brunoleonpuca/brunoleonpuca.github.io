@@ -99,9 +99,9 @@
 /********************** MEDIA QUERIES - EXPERIENCE SECTION ***************************/
 @media only screen and (min-width: 768px) {
   #experience-container {
-    padding-block-start: 2rem;
-    height: 105%;
-    width: 96%;
+    padding-block-start: 6rem;
+    height: auto;
+    width: 94%;
     text-align: center;
     align-items: initial;
     align-content: initial;

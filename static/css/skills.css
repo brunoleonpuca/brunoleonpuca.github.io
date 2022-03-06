@@ -90,7 +90,7 @@
 @media only screen and (min-width: 786px) {
   #skills-container {
     height: 110%;
-    padding-block-start: 2rem;
+    padding-block-start: 5rem;
   }
 
   .dev-icons {
