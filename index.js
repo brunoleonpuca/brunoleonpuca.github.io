@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse("hide");
   });
 
-  // $("#myModal").modal('show');
+  $("#myModal").modal('show');
 
   $("#myModal").on("show", function () {
     $("body").addClass("modal-open");

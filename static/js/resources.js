@@ -388,9 +388,9 @@ for (let index = 0; index < tabs.length; index++) {
     setAttributes(tag, {
       class: "nav-link active",
       id: "pills-" + tabs[index] + "-tab",
-      "data-toggle": "pill",
+      "data-bs-toggle": "pill",
       href: "#pills-" + tabs[index],
-      role: "tab",
+      role: "tablist",
       "aria-controls": "pills-" + tabs[index],
       "aria-selected": "true",
     });
@@ -400,9 +400,9 @@ for (let index = 0; index < tabs.length; index++) {
     setAttributes(tag, {
       class: "nav-link",
       id: "pills-" + tabs[index] + "-tab",
-      "data-toggle": "pill",
+      "data-bs-toggle": "pill",
       href: "#pills-" + tabs[index],
-      role: "tab",
+      role: "tablist",
       "aria-controls": "pills-" + tabs[index],
       "aria-selected": "false",
     });
