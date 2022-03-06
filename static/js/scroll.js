@@ -7,13 +7,25 @@ let offsets = [];
 let oldSlide = 0;
 let activeSlide = 0;
 let dots = document.querySelector(".dots");
-// let navLinks = document.querySelectorAll(".nav-link");
+let navLinks = document.querySelectorAll(".nav-link");
 let navDots = [];
 let iw = window.innerWidth;
 
 document.querySelector("#leftArrow").addEventListener("click", slideAnim);
 document.querySelector("#rightArrow").addEventListener("click", slideAnim);
-// document.querySelectorAll(".nav-link").addEventListener("click", slideAnim);
+
+// document.querySelector("#nav-about").addEventListener("click", slideAnim);
+// document.querySelector("#nav-experience").addEventListener("click", slideAnim);
+// document.querySelector("#nav-skills").addEventListener("click", slideAnim);
+// document.querySelector("#nav-project").addEventListener("click", slideAnim);
+// document.querySelector("#nav-resources").addEventListener("click", slideAnim);
+// document.querySelector("#nav-contact").addEventListener("click", slideAnim);
+
+// create nav links
+for (let i = 0; i < slides.length; i++) {
+    navLinks[i].index = i;
+    navLinks[i].addEventListener("click", slideAnim);
+}
 
 // create the nav dots
 for (let i = 0; i < slides.length; i++) {
@@ -62,6 +74,15 @@ dotAnim.to(
     },
     0
 );
+// dotAnim.to(
+//     ".nav-link",
+//     slides.length + 1, {
+//         y: -(slides.length * 30),
+//         rotation: 0.01,
+//         ease: "none"
+//     },
+//     0.5
+// );
 dotAnim.time(1);
 
 // make the whole thing draggable
@@ -77,7 +98,7 @@ dotAnim.time(1);
 //     onDragEnd: slideAnim,
 //     allowNativeTouchScrolling: false,
 //     zIndexBoost: false,
-    
+
 // });
 
 // dragMe[0].id = "dragger";
@@ -101,7 +122,10 @@ function slideAnim(e) {
         } else if (this.className === "dot") {
             activeSlide = this.index;
             // scrollwheel
-        } else {
+        } else if (this.className === "nav-link"){
+            activeSlide = this.index;
+        } 
+        else {
             activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
         }
     }
