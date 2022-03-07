@@ -1,9 +1,9 @@
 /********************** MAIN CONTENT - SKILLS SECTION ***************************/
 #skills-container {
   font-family: var(--font-body);
-  width: 80%;
+  width: 86%;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #skills-container>h2 {
@@ -23,7 +23,6 @@
 .icon-container {
   padding: 1px 1px;
   flex: 0 1 100%;
-  /* border: 1px solid var(--neon-green); */
   border-radius: 2%;
 }
 
@@ -41,33 +40,34 @@
   align-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #automation-skills,
 #database-skills,
 #other-skills {
-  flex: 1 1 40%;
-}
-
-#collaborative-skills {
-  flex: 1 1 100%;
+  flex: 0 1 40%;
 }
 
 .icon-box {
   border-radius: 10%;
-  flex: 0 1 13%;
-  margin: 1px 5px;
+  width: 20%;
+  text-align-last: center;
+  /* margin: 1px 5px; */
   box-shadow: var(--dark-box-shadow);
 }
 
 #automation-skills .icon-box,
 #database-skills .icon-box,
 #other-skills .icon-box {
-  flex: 0 1 38%;
+  flex: 0 1 50%;
 }
 
 .icon-box>i {
+  font-size: var(--size-skills-icons);
+}
+
+.icon-box>.mosaic>i {
   font-size: var(--size-skills-icons);
 }
 
@@ -75,6 +75,18 @@
   margin-top: 1px;
   font-family: 'Rajdhani';
   font-size: var(--size-skills-subheader);
+}
+
+.icon-box>.mosaic>h4 {
+  margin-top: 1px;
+  font-family: 'Rajdhani';
+  font-size: var(--size-skills-subheader);
+}
+
+.icon-box>.mosaic {
+  /* padding: 5px 5px; */
+  /* border: 2px solid var(--white); */
+  box-shadow: var(--dark-box-inside);
 }
 
 .png-icon {

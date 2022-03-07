@@ -7,11 +7,16 @@ $(document).ready(function () {
 
   //Show tooltip on page load
   $('#logo-collapsed').tooltip('show');
+
+  
   //Hide tooltip after three seconds
   setTimeout(function () {
-    $('[data-toggle="tooltip"]').tooltip('dispose')
+    $('#logo-collapsed').tooltip('dispose')
   }, 3000)
 
+  $('#logo-collapsed').on("click", function () {
+    $('#logo-collapsed').tooltip('show');
+  })
 
   $(document).on("click", function () {
     $(".navbar-collapse").collapse("hide");

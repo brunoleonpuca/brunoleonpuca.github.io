@@ -41,6 +41,8 @@
   --dark-box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%),
     0 4.8px 14.4px 0 rgb(0 0 0 / 18%);
 
+  --dark-box-inside: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+
   /* ----------THEME GRADIENTS----------- */
   --dark-blue-gradient: linear-gradient(90deg,
       #36bfa6 0%,
@@ -82,8 +84,8 @@
   --size-skills-title: clamp(1rem, 3vw + 1rem, 1.4rem);
   --size-skills-header: clamp(0.6rem, 1vw + 0.6rem, 1rem);
   --size-skills-subheader: clamp(0.4rem, 3vw + 0.5rem, 0.8rem);
-  --size-skills-icons: clamp(1rem, 2vw + 1.5rem, 4rem);
-  --size-skills-png-icons: clamp(37px, 2vw + 30px, 200px);
+  --size-skills-icons: clamp(0.4rem, 1vh + 1rem, 1.5rem);
+  --size-skills-png-icons: clamp(25px, 1vh + 10px, 150px);
 
   /* MOBILE PROJECTS */
   --size-projects-title: clamp(1rem, 3vw + 1rem, 1.4rem);
