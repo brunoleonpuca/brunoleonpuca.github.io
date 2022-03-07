@@ -15,6 +15,7 @@
 #contact-form form input,
 #contact-form form textarea,
 #contact-form form button {
+  box-shadow: var(--dark-box-inside);
   font-size: var(--size-text-medium);
   border: 1px solid var(--neon-green);
   color: var(--ff--color-secondary);

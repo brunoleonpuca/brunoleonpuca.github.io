@@ -1,7 +1,7 @@
 /********************** MAIN CONTENT - SKILLS SECTION ***************************/
 #skills-container {
   font-family: var(--font-body);
-  width: 86%;
+  width: 80%;
   justify-content: center;
   /* text-align: center; */
 }
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .icon-container {
@@ -53,6 +53,7 @@
   border-radius: 10%;
   width: 20%;
   text-align-last: center;
+  -webkit-text-size-adjust: center;
   /* margin: 1px 5px; */
   box-shadow: var(--dark-box-shadow);
 }

@@ -12,7 +12,7 @@ $(document).ready(function () {
   //Hide tooltip after three seconds
   setTimeout(function () {
     $('#logo-collapsed').tooltip('dispose')
-  }, 3000)
+  }, 6000)
 
   $('#logo-collapsed').on("click", function () {
     $('#logo-collapsed').tooltip('show');
