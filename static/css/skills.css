@@ -69,6 +69,8 @@
 }
 
 .icon-box>.mosaic>i {
+  text-align: center;
+  align-self: center;
   font-size: var(--size-skills-icons);
 }
 

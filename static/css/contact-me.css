@@ -1,5 +1,6 @@
 /********************** START MAIN CONTENT - CONTACT SECTION ***************************/
 #contact {
+  font-family: var(--font-body);
   padding-block-start: 2rem;
   justify-content: center;
 }
