@@ -13,7 +13,7 @@
 
 #experience .card {
   background-color: transparent;
-  box-shadow: var(--dark-box-shadow);
+  box-shadow: var(--dark-card-shadow);
 }
 
 #experience .card-body {

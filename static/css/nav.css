@@ -11,8 +11,6 @@ nav {
   padding: 0 !important;
 }
 
-
-
 #nav-buttons>li {
   background-color: transparent;
   margin-left: 1rem;
@@ -60,7 +58,7 @@ nav {
   align-items: flex-start;
 }
 
- nav .nav-link {
+nav .nav-link {
   padding: 0;
 }
 

@@ -44,8 +44,8 @@ gsap.set(".title", {
     y: 30
 });
 gsap.set(".social-icons-floating", {
-    xPercent: -50,
-    yPercent: -50
+    yPercent: -160,
+    xPercent: -115
 });
 
 // lower screen animation with nav dots and rotating titles
@@ -75,15 +75,34 @@ dotAnim.to(
     0
 );
 // dotAnim.to(
-//     ".nav-link",
-//     slides.length + 1, {
-//         y: -(slides.length * 30),
-//         rotation: 0.01,
-//         ease: "none"
+//     ".nav-link", {
+//         stagger: {
+//             each: 1,
+//             yoyo: true,
+//             repeat: 1
+//         },
+//         scrollTrigger: {
+//             start: 'top bottom',
+//             end: 'bottom top',
+//             trigger: ".nav-link",
+//             toggleClass: 'test'
+//         }
 //     },
 //     0.5
 // );
+
 dotAnim.time(1);
+
+gsap.to(
+    ".social-icons-floating", 1, {
+        autoAlpha: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: offsets[1],
+            start: "bottom bottom",
+            scrub: true,
+        },
+    });
 
 // make the whole thing draggable
 // let dragMe = Draggable.create(container, {
@@ -126,7 +145,7 @@ function slideAnim(e) {
             activeSlide = this.index;
         } else if (this.id === "modalContact") {
             activeSlide = slides.length;
-        } else if (this.id === "logo-list" || this.id === "logo-collapsed")  {
+        } else if (this.id === "logo-list" || this.id === "logo-collapsed") {
             activeSlide = 0;
         } else {
             // console.log("here")
@@ -182,32 +201,22 @@ function tweenDot() {
 
 draggable.disable();
 
-gsap.to("#floating-button", {
-    autoAlpha: 1,
-    ease: "none",
-    scrollTrigger: {
-        trigger: "#experience",
-        start: "bottom bottom",
-        scrub: true,
-    },
-});
+// gsap.to("#floating-button", {
+//     autoAlpha: 1,
+//     ease: "none",
+//     scrollTrigger: {
+//         trigger: "#experience",
+//         start: "bottom bottom",
+//         scrub: true,
+//     },
+// });
 
-gsap.to("#floating-button", {
-    autoAlpha: 1,
-    ease: "none",
-    scrollTrigger: {
-        trigger: "#experience",
-        start: "bottom bottom",
-        scrub: true,
-    },
-});
-
-gsap.to(".social-icons-floating", {
-    autoAlpha: 1,
-    ease: "none",
-    scrollTrigger: {
-        trigger: "#experience",
-        start: "bottom bottom",
-        scrub: true,
-    },
-});
+// gsap.to("#floating-button", {
+//     autoAlpha: 1,
+//     ease: "none",
+//     scrollTrigger: {
+//         trigger: "#experience",
+//         start: "bottom bottom",
+//         scrub: true,
+//     },
+// });

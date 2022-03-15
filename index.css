@@ -41,6 +41,9 @@
   --dark-box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%),
     0 4.8px 14.4px 0 rgb(0 0 0 / 18%);
 
+  --dark-card-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%),
+    0 4.8px 14.4px 0 rgb(0 0 0 / 80%);
+
   --dark-box-inside: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
 
   /* ----------THEME GRADIENTS----------- */
@@ -137,7 +140,7 @@
     --size-about-icons-description: clamp(0.8rem, 1vh + 0.4rem, 1rem);
     --size-about-social-icons: clamp(0.8rem, 2vh + 0.3rem, 1.5rem);
     --size-about-sicla-icons-min-width: 3rem;
-    
+
 
     /* WEB EXPERIENCE */
     --size-experience-header: clamp(0.8rem, 3vw + 0.3rem, 1.6rem);
@@ -411,18 +414,18 @@ section {
 
 /* ************************* START SOCIAL ICONS FLOATING MAIN SECTION ******************* */
 .social-icons-floating {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   z-index: 99;
-  /* margin-right: 118rem; */
-  /* margin-bottom: 2rem; */
+  right: 0;
+  bottom: 0;
   transition: all 0.2s ease-in-out;
 }
 
 #floating-button {
   width: 1.5rem;
   height: 3.5rem;
-  opacity: 0;
+  opacity: 1;
   border: 3px solid var(--neon-green);
   background-color: var(--black) !important;
   padding: 12px 6px;
@@ -441,16 +444,18 @@ section {
   align-content: center;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  /* padding: 1%; */
   height: 100%;
+  margin: 0px 8px !important;
   transition: all 0.2s ease-in-out;
+  transform: none !important;
 }
 
 #floating-button+.dropdown-menu .dropdown-item {
   color: var(--white);
   padding: 5px 9px;
   background-color: #343a40;
-  height: 100%;
+  /* height: 100%; */
 }
 
 #floating-button+.dropdown-menu .dropdown-item:hover {
@@ -473,10 +478,12 @@ section {
 
 @media only screen and (min-width: 768px) {
   .section-main-content {
-    height: clamp(70%, 75%, 85%);
+    /* height: clamp(70%, 75%, 85%); */
   }
 
   .social-icons-floating {
+    right: -0.6%;
+    bottom: -4%;
   }
 
   #floating-button {
