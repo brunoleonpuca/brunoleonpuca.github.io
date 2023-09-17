@@ -114,7 +114,7 @@
   #experience-outer {
     display: flex;
     flex-direction: row;
-    height: 86%;
+    /*height: 86%;*/
     width: 100%;
     align-content: center;
     align-items: stretch;
@@ -147,7 +147,13 @@
     /* height: 25%; */
   }
 
+  .education-item
+  {
+    color: #da00ff87;
+  }
+
   .experience-item {
+    max-width: 42rem;
     padding: 20px;
     flex: 1 1 33%;
     display: grid;
