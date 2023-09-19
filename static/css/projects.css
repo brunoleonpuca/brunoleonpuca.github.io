@@ -118,10 +118,9 @@
   }
 
   .projects-item {
-    /* width: 70%; */
     width: 90%;
-    height: 12rem;
-    margin: 2px;
+    /* height: 12rem; */
+    margin-bottom: 6rem;
   }
 
   .projects-item .projects-hover {

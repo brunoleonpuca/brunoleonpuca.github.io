@@ -135,10 +135,6 @@
     margin-bottom: 1px;
   }
 
-  .icon-box>.mosaic>i {
-    /* margin: 10px auto; */
-}
-
   .list-icons {
     flex-wrap: nowrap;
   }

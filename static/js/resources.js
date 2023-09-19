@@ -31,6 +31,46 @@ const resourcesList = [{
         description: "Paquetes de Python",
         url: "https://pypi.org/",
       },
+      {
+        title: "Excecisms Python Track",
+        description: "Ofrece diversos ejercicios de Python",
+        url: "https://exercism.org/tracks/python",
+      },
+      {
+        title: "Python Principles Challenges",
+        description: "Un set de desafios para practicar Python, con pistas y soluciones",
+        url: "https://pythonprinciples.com/challenges/",
+      },
+      {
+        title: "Real Python",
+        description: "Variedad de articulos y cursos desde nivel basico hasta avanzado",
+        url: "https://realpython.com/",
+      },
+      {
+        title: "Python Crash Course",
+        description: "Un libro muy popular con un alcance para crear proyectos en Python",
+        url: "https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/No.Starch.Python.Oct_.2015.ISBN_.1593276036.pdf",
+      },
+      {
+        title: "Talk Python to me",
+        description: "Un podcast acerca Python",
+        url: "https://talkpython.fm/",
+      },
+      {
+        title: "PyBites",
+        description: "Para mejorar las habilidades en python usando problemas de Bites",
+        url: "https://codechalleng.es/",
+      },
+      {
+        title: "Pypi",
+        description: "Paquetes de Python",
+        url: "https://pypi.org/",
+      },
+      {
+        title: "W3C Python",
+        description: "EL curso y guia de W3C para Python",
+        url: "https://www.w3schools.com/python/",
+      }
     ]
   },
   {
