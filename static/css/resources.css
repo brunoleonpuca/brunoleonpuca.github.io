@@ -47,6 +47,7 @@
   
   .tab-content {
     width: 100%;
+    padding: 18px;
   }
   
   .tab-content .tab-pane {

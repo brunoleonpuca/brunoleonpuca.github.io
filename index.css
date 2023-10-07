@@ -79,9 +79,9 @@
 
   /* MOBILE EXPERIENCE */
   --size-experience-header: clamp(1rem, 3vw + 1rem, 1.2rem);
-  --size-experience-role: clamp(0.8rem, 3vw + 0.2rem, 1.2rem);
+  --size-experience-role: clamp(0.4rem, 2vw + 0.2rem, 1.2rem);
   --size-experience-place: clamp(0.4rem, 3vw + 0.2rem, 0.8rem);
-  --size-experience-description: clamp(1rem, 1vw + 0.3rem, 1.5rem);
+  --size-experience-description: clamp(0.8rem, 1vw + 0.3rem, 1.5rem);
 
   /* MOBILE SKILLS */
   --size-skills-title: clamp(1rem, 3vw + 1rem, 1.4rem);
@@ -236,11 +236,11 @@ section {
 }
 
 #leftArrow {
-  left: 6px;
+  left: 2px;
 }
 
 #rightArrow {
-  right: 6px;
+  right: 2px;
 }
 
 .arrow {
@@ -249,8 +249,8 @@ section {
   top: 50%;
   cursor: pointer;
   opacity: 0.75;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   stroke-width: 8px;
   stroke: var(--neon-green);
   border: 3px solid var(--neon-green);
@@ -315,6 +315,7 @@ section {
 }
 
 .modal-header {
+  max-height: 36rem;
   font-size: var(--size-modal);
   display: inline-block !important;
 }
@@ -349,7 +350,7 @@ section {
 
 #myModal .close {
   color: var(--white);
-  font-size: 25px;
+  font-size: 45px;
 }
 
 #myModal .close:hover {
