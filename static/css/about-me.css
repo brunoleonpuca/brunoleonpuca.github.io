@@ -198,7 +198,7 @@
 /*************************** ABOUT CONTAINER MEDIA QUERIES *********************************/
 @media only screen and (min-width: 768px) {
     #about-container {
-        padding-block-start: 5rem;
+        padding-block-start: 8rem;
         height: 92%;
     }
 

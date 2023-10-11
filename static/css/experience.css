@@ -99,7 +99,7 @@
 /********************** MEDIA QUERIES - EXPERIENCE SECTION ***************************/
 @media only screen and (min-width: 768px) {
   #experience-container {
-    padding-block-start: 6rem;
+    padding-block-start: 2rem;
     height: auto;
     width: 94%;
     text-align: center;
@@ -114,7 +114,7 @@
   #experience-outer {
     display: flex;
     flex-direction: row;
-    /*height: 86%;*/
+    height: 75%;
     width: 100%;
     align-content: center;
     align-items: stretch;
