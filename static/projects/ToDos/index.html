@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="todo-column" class="column">
+            <h2>To Do</h2>
+            <div class="task-list"></div>
+        </div>
+        <div id="inprogress-column" class="column">
+            <h2>In Progress</h2>
+            <div class="task-list"></div>
+        </div>
+        <div id="done-column" class="column">
+            <h2>Done</h2>
+            <div class="task-list"></div>
+        </div>
+    </div>
+
+    <div id="add-task">+</div>
+
+    <div id="task-modal" class="modal">
+        <h2>Create Task</h2>
+        <div class="modal-content">
+            <label>
+                <input type="radio" name="task-type" value="static" checked> Create static To Do
+            </label>
+            <label>
+                <input type="radio" name="task-type" value="ai"> Create AI task
+            </label>
+            <div id="static-task-form">
+                <input type="text" id="task-title" placeholder="Task Title">
+                <textarea id="task-description" placeholder="Task Description"></textarea>
+            </div>
+            <div id="ai-task-form" style="display: none;">
+                <input type="text" id="ai-task-title" placeholder="Task Title">
+                <div id="ai-prompt-container">
+                    <textarea id="ai-task-prompt" placeholder="Enter your prompt"></textarea>
+                    <button id="generate-btn">Generate</button>
+                </div>
+                <div id="ai-task-output" style="width: 100%; height: 200px; border: 1px solid #ccc; margin-top: 10px;"></div>
+            </div>
+        </div>
+        <div class="modal-buttons">
+            <div class="row">
+                <button id="todo-btn">To Do!</button>
+                <button id="repeat-prompt-btn" style="display: none;">Repeat prompt</button>
+            </div>
+            <div class="row">
+                <button id="cancel-btn">Cancel</button>
+                <button id="delete-btn" style="display: none;">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="verification-window" class="verification-window">
+        <p>Are you sure you want to delete this task?</p>
+        <button id="confirm-delete">Yes, delete</button>
+        <button id="cancel-delete">No, keep it</button>
+    </div>
+    <div id="alert-window" class="alert-window">
+        <p>The textboxes cannot be empty. Please fill in all required fields.</p>
+        <button id="alert-ok">OK</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
