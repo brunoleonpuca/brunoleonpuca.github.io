@@ -117,6 +117,9 @@ body, html {
     cursor: pointer;
     z-index: 1000;
 }
+#static-task-form {
+    display: grid;
+}
 .modal {
     display: none;
     position: fixed;
