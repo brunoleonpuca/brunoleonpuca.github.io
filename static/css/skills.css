@@ -161,6 +161,7 @@
     justify-content: flex-start;
   }
 
+  #collaborative-skills .skill-subheader,  
   #database-skills .skill-subheader {
     margin-left: 3rem;
   }
