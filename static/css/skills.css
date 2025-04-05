@@ -144,6 +144,11 @@
     min-width: 6rem;
   }
 
+  #collaborative-skills .icon-box{
+      min-width: 5rem;
+  }
+  
+
   /* .dev-icons {
     flex-direction: row;
     flex-wrap: wrap;
