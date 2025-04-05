@@ -121,23 +121,24 @@
   }
 
   #project-list li {
-    flex: 0 1 25%;
+    flex: 0 1 33%;
   }
 
   .projects-item {
     width: 90%;
-    height: 12rem;
+    height: 10rem;
     margin-bottom: 6rem;
   }
 
   .projects-item img {
     width: 100%;
-    height: 100%;
+    height: 141%;
     object-fit: cover;
   }
 
   .projects-item .projects-hover {
     padding: 10px 5px;
+    height: 141%;
   }
 }
 

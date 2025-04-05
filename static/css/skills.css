@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .icon-container {
@@ -46,7 +46,8 @@
 
 #automation-skills,
 #database-skills,
-#other-skills {
+#other-skills,
+#collaborative-skills {
   flex: 0 1 40%;
 }
 
@@ -64,7 +65,8 @@
 
 #automation-skills .icon-box,
 #database-skills .icon-box,
-#other-skills .icon-box {
+#other-skills .icon-box,
+#collaborative-skills .icon-box{
   flex: 0 1 50%;
 }
 
@@ -111,11 +113,35 @@
   filter: grayscale();
 }
 
+.playwright-icon {
+  filter: grayscale();
+}
+
 /* ------------------------------- MEDIA QUERIES SKILLS START ------------------------------------------ */
 @media only screen and (min-width: 786px) {
   #skills-container {
     height: 100%;
     padding-block-start: 6rem;
+  }
+
+  #automation-skills,
+  #database-skills,
+  #other-skills,
+  #collaborative-skills {
+    flex: 1 1 15%;
+  }
+
+  .icon-box {
+    border-radius: 10%;
+    margin: 0px 40px;
+    box-shadow: var(--dark-box-shadow);
+  }
+
+  .karate-icon,
+  .postman-icon,
+  .playwright-icon,
+  .selenium-icon {
+    min-width: 6rem;
   }
 
   /* .dev-icons {
@@ -125,6 +151,14 @@
     align-items: center;
     align-content: center;
   } */
+
+  .dev-icons {
+    justify-content: flex-start;
+  }
+
+  #database-skills .skill-subheader {
+    margin-left: 3rem;
+  }
 
   /* .icon-container {
     margin-top: 3px;
@@ -148,13 +182,6 @@
   #collaborative-skills {
     flex: 0 1 100%;
   } */
-
-  .icon-box {
-    border-radius: 10%;
-    flex: 1 1 15%;
-    margin: 0px 50px;
-    box-shadow: var(--dark-box-shadow);
-  }
 }
 
 /********************** END MEDIA QUERIES - SKILLS SECTION ***************************/
